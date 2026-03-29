@@ -3,478 +3,346 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Ritual Services | The Silent Guardian</title>
+<title>Eternal Memory | Professional Funeral Services</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              colors: {
-                "error": "#ee7d77",
-                "primary-fixed": "#e3e2e2",
-                "surface-variant": "#252626",
-                "on-secondary-fixed-variant": "#5c5b5b",
-                "on-primary-container": "#d0d0d0",
-                "on-tertiary": "#5e5f5f",
-                "inverse-surface": "#fcf9f8",
-                "on-tertiary-container": "#555757",
-                "surface": "#0e0e0e",
-                "secondary-fixed-dim": "#d6d4d3",
-                "tertiary-fixed": "#f3f3f3",
-                "secondary-fixed": "#e4e2e1",
-                "tertiary-fixed-dim": "#e5e5e5",
-                "inverse-primary": "#5e5f5f",
-                "surface-container-high": "#1f2020",
-                "on-secondary-fixed": "#3f3f3f",
-                "secondary-container": "#3b3b3b",
-                "primary-dim": "#b8b9b9",
-                "surface-bright": "#2b2c2c",
-                "on-tertiary-fixed": "#484a4a",
-                "surface-dim": "#0e0e0e",
-                "error-container": "#7f2927",
-                "primary-container": "#464747",
-                "inverse-on-surface": "#565555",
-                "on-tertiary-fixed-variant": "#656667",
-                "background": "#0e0e0e",
-                "on-primary-fixed-variant": "#5a5c5c",
-                "on-secondary-container": "#c1bfbe",
-                "tertiary": "#f9f9f9",
-                "on-surface-variant": "#acabab",
-                "secondary-dim": "#9f9d9d",
-                "tertiary-container": "#ebebeb",
-                "outline-variant": "#474848",
-                "on-primary-fixed": "#3e3f40",
-                "primary": "#c6c6c6",
-                "surface-container": "#191a1a",
-                "primary-fixed-dim": "#d4d4d4",
-                "on-background": "#e7e5e5",
-                "surface-container-lowest": "#000000",
-                "on-surface": "#e7e5e5",
-                "surface-container-low": "#131313",
-                "outline": "#757575",
-                "surface-tint": "#c6c6c6",
-                "on-primary": "#3f4041",
-                "on-error": "#490106",
-                "surface-container-highest": "#252626",
-                "error-dim": "#bb5551",
-                "tertiary-dim": "#ebebeb",
-                "secondary": "#9f9d9d",
-                "on-secondary": "#202020",
-                "on-error-container": "#ff9993"
-              },
-              fontFamily: {
-                "headline": ["Manrope"],
-                "body": ["Inter"],
-                "label": ["Inter"]
-              },
-              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#d4d4d4",
+              "surface-container-low": "#131313",
+              "on-primary-fixed-variant": "#5a5c5c",
+              "tertiary-fixed-dim": "#e6e5e5",
+              "on-primary": "#3f4041",
+              "on-tertiary-container": "#565757",
+              "inverse-on-surface": "#565555",
+              "surface-variant": "#252626",
+              "secondary-container": "#3a3c3c",
+              "secondary-fixed": "#e3e2e2",
+              "on-surface-variant": "#acabab",
+              "surface-tint": "#c6c6c7",
+              "outline-variant": "#474848",
+              "on-primary-fixed": "#3e4040",
+              "on-secondary-container": "#bfbfbf",
+              "error-dim": "#bb5551",
+              "surface-bright": "#2b2c2c",
+              "outline": "#757575",
+              "secondary-dim": "#9d9e9e",
+              "on-secondary": "#1f2021",
+              "error-container": "#7f2927",
+              "surface-container": "#191a1a",
+              "on-error-container": "#ff9993",
+              "error": "#ee7d77",
+              "on-error": "#490106",
+              "on-secondary-fixed": "#3e3f40",
+              "surface-container-lowest": "#000000",
+              "tertiary": "#faf9f9",
+              "on-background": "#e7e5e5",
+              "secondary": "#9d9e9e",
+              "inverse-surface": "#fcf9f8",
+              "tertiary-container": "#ecebea",
+              "on-tertiary-fixed-variant": "#666666",
+              "primary": "#c6c6c7",
+              "surface": "#0e0e0e",
+              "surface-dim": "#0e0e0e",
+              "inverse-primary": "#5e5f5f",
+              "tertiary-fixed": "#f4f3f3",
+              "tertiary-dim": "#ecebea",
+              "primary-container": "#454747",
+              "surface-container-high": "#1f2020",
+              "on-tertiary-fixed": "#494a4a",
+              "on-surface": "#e7e5e5",
+              "on-primary-container": "#d0d0d0",
+              "primary-fixed-dim": "#d4d4d4",
+              "primary-fixed": "#e2e2e2",
+              "background": "#0e0e0e",
+              "primary-dim": "#b8b9b9",
+              "on-secondary-fixed-variant": "#5a5c5c",
+              "on-tertiary": "#5e5f5f",
+              "surface-container-highest": "#252626"
             },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
           },
-        }
-      </script>
+        },
+      }
+    </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
-        @keyframes marquee {
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .ticker-animation {
+            display: flex;
+            white-space: nowrap;
+            animation: ticker 30s linear infinite;
+        }
+        @keyframes ticker {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
-        .animate-marquee {
-            display: flex;
-            width: max-content;
-            animation: marquee 30s linear infinite;
-        }
-      </style>
+    </style>
 </head>
-<body class="bg-background text-on-background font-body selection:bg-primary/30">
-<!-- Header (TopNavBar) -->
-<header class="fixed top-0 w-full z-50 bg-[#0e0e0e]/90 backdrop-blur-xl shadow-2xl shadow-black/50 font-['Manrope'] tracking-tight antialiased">
-<div class="flex justify-between items-center px-8 py-4 max-w-none mx-auto">
-<div class="text-xl font-bold tracking-tighter text-[#f9f9f9]">Ritual Services</div>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-8 py-4 bg-[#0e0e0e]/60 backdrop-blur-md z-50">
+<div class="text-xl font-bold tracking-tighter text-[#e7e5e5] font-headline">Eternal Memory</div>
 <nav class="hidden md:flex items-center gap-8">
-<a class="text-[#f9f9f9] border-b border-[#c6c6c6] pb-1 transition-all duration-500" href="#">Services</a>
-<a class="text-[#acabab] hover:text-[#f9f9f9] transition-colors duration-500" href="#">Rituals</a>
-<a class="text-[#acabab] hover:text-[#f9f9f9] transition-colors duration-500" href="#">Pricing</a>
-<a class="text-[#acabab] hover:text-[#f9f9f9] transition-colors duration-500" href="#">Reviews</a>
-<a class="text-[#acabab] hover:text-[#f9f9f9] transition-colors duration-500" href="#">Contact</a>
+<a class="font-['Manrope'] tracking-[-0.02em] uppercase text-xs font-semibold text-[#acabab] hover:text-[#e7e5e5] transition-colors" href="#">Services</a>
+<a class="font-['Manrope'] tracking-[-0.02em] uppercase text-xs font-semibold text-[#acabab] hover:text-[#e7e5e5] transition-colors" href="#">About</a>
+<a class="font-['Manrope'] tracking-[-0.02em] uppercase text-xs font-semibold text-[#acabab] hover:text-[#e7e5e5] transition-colors" href="#">Reviews</a>
+<a class="font-['Manrope'] tracking-[-0.02em] uppercase text-xs font-semibold text-[#acabab] hover:text-[#e7e5e5] transition-colors" href="#">Contact</a>
 </nav>
-<div class="flex items-center gap-4">
-<div class="hidden lg:flex flex-col items-end gap-1">
-<a class="text-xs text-[#c6c6c6] font-medium hover:opacity-80 transition-opacity" href="tel:+77077314191">+77077314191</a>
-<a class="text-xs text-[#c6c6c6] font-medium hover:opacity-80 transition-opacity" href="tel:+77027314191">+77027314191</a>
+<div class="flex items-center gap-6">
+<span class="font-['Manrope'] tracking-[-0.02em] uppercase text-xs font-semibold text-[#c6c6c7] hidden sm:inline-block">+77077314191</span>
+<button class="bg-primary text-on-primary px-5 py-2 font-['Manrope'] tracking-[-0.02em] uppercase text-xs font-bold active:scale-95 transition-transform">
+                Call Now
+            </button>
 </div>
-<div class="flex gap-2">
-<a class="bg-primary text-on-primary px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-white transition-all duration-300" href="tel:+77077314191">Call Now</a>
-<span class="material-symbols-outlined text-[#f9f9f9] p-2 cursor-pointer hover:bg-[#2b2c2c]/50 rounded-full transition-all">account_circle</span>
-</div>
-</div>
-</div>
-<div class="bg-gradient-to-b from-[#191a1a] to-transparent h-[1px] w-full absolute bottom-0"></div>
 </header>
-<!-- SideNavBar (Floating Actions) -->
-<aside class="fixed right-6 bottom-24 rounded-full w-14 h-auto py-4 z-40 bg-[#191a1a] shadow-[0px_0px_40px_rgba(0,0,0,0.6)] flex flex-col gap-4 items-center font-['Inter'] text-sm">
-<button class="p-2 text-[#acabab] hover:scale-110 transition-transform duration-300" title="24/7 Support">
-<span class="material-symbols-outlined">support_agent</span>
-</button>
-<button class="p-2 bg-[#2b2c2c] text-[#f9f9f9] rounded-full scale-95 active:transition-all" title="WhatsApp Chat">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
-</button>
-<button class="p-2 text-[#acabab] hover:scale-110 transition-transform duration-300" title="Call Now">
-<span class="material-symbols-outlined">phone_in_talk</span>
-</button>
-<button class="p-2 text-[#acabab] hover:scale-110 transition-transform duration-300" title="Emergency">
-<span class="material-symbols-outlined">emergency</span>
-</button>
-</aside>
-<main class="pt-24">
+<main>
 <!-- Hero Section -->
-<section class="relative min-h-[819px] flex items-center px-8 md:px-20 overflow-hidden">
-<div class="absolute inset-0 z-0 opacity-40">
-<img alt="Respectful atmosphere" class="w-full h-full object-cover grayscale" data-alt="dramatic wide shot of a peaceful cemetery at twilight with soft fog and ancient stone monuments in a dark moody atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo91JLiXJFLgpGNzL6SyqOkudlZ45Fo_YdjXcVQYQ9M5K-PXY8mMpM-jY5T-zkb6W4bILWxf5dnSM-wH8yKkH_f6dqxcdzZdyyPUvckB3h80ziAaMApmKVH7wFWRkFGuSqbL2CC_F-0PhvkvVUf3PUBBeFAXsyWircxeQnTjqaqhPdy2VIYlTktYJpLr5Tu26psZZFVCE-zzKNGj1NR-wZuKFA9xS4n2a9LCTZYQ8oz7BYaWXR0VLqZdYm2bjWgpVNUugrpCM1QLw"/>
-<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+<section class="relative h-screen flex items-center justify-center px-8 pt-20 overflow-hidden bg-surface">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-20 grayscale" data-alt="Minimalist architectural space with soft natural light shadows on a dark concrete wall, solemn and peaceful atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCE9kh4pG95ANQFUjFSbngmdZdSJlj9wBfM9YoC2J14bfKjuMS2zu3C1s0AK677zdHTRieplgddFvELS0T6-jmkC2YMkhPtGRsuLvc0yehfd68c98udBhP6hDY5kZTVo7L9JmZGvD-RIqd0Mca3MX8HRH4cZ2WHBpBmsu-h7IDDjHgwdNnDL1ChIf-vVeapZ2_VNWHbrTy80q9AWu2Hit80bx9JEsQGUeYcl8wieR4sbz9U3bjNNNpzjqR4dgcJVoFUN3sr_lSM7oe"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
 </div>
-<div class="relative z-10 max-w-3xl space-y-8">
-<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-tertiary leading-[1.1]">
-                    The Silent <br/><span class="text-outline">Guardian</span>
+<div class="relative z-10 max-w-5xl text-center">
+<span class="block font-label uppercase tracking-[0.2em] text-primary mb-6 text-sm">Professional Support</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-on-surface leading-[1.1]">
+                    Eternal Memory. <br/>
+<span class="text-on-surface-variant font-medium">We are with you in moments of sorrow.</span>
 </h1>
-<p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed">
-                    Professional funeral services with dignity, respect, and absolute silence. We stand by you during your most difficult moments, ensuring every detail is handled with solemn grace.
-                </p>
-<div class="flex flex-wrap gap-4 pt-4">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-white transition-all">Call Now</button>
-<button class="bg-surface-container-high text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-surface-bright transition-all">Our Rituals</button>
+<div class="w-24 h-px bg-primary/30 mx-auto"></div>
+</div>
+</section>
+<!-- Ticker Section -->
+<section class="bg-surface-container-low py-4 overflow-hidden border-y border-outline-variant/10">
+<div class="ticker-animation font-label text-xs uppercase tracking-widest text-on-surface">
+<div class="flex gap-12 items-center px-6">
+<span>Работаем 24/7</span><span class="text-primary">•</span>
+<span>Поддержка</span><span class="text-primary">•</span>
+<span>Похороны под ключ</span><span class="text-primary">•</span>
+<span>Все религии и традиции</span><span class="text-primary">•</span>
+</div>
+<div class="flex gap-12 items-center px-6">
+<span>Работаем 24/7</span><span class="text-primary">•</span>
+<span>Поддержка</span><span class="text-primary">•</span>
+<span>Похороны под ключ</span><span class="text-primary">•</span>
+<span>Все религии и традиции</span><span class="text-primary">•</span>
+</div>
+<div class="flex gap-12 items-center px-6">
+<span>Работаем 24/7</span><span class="text-primary">•</span>
+<span>Поддержка</span><span class="text-primary">•</span>
+<span>Похороны под ключ</span><span class="text-primary">•</span>
+<span>Все религии и традиции</span><span class="text-primary">•</span>
 </div>
 </div>
 </section>
-<!-- 24/7 Ticker -->
-<div class="bg-surface-container border-y border-outline-variant/10 py-4 overflow-hidden select-none">
-<div class="animate-marquee flex gap-12 items-center text-primary uppercase font-bold tracking-widest text-sm">
-<span>Работаем 24/7</span>
-<span class="w-2 h-2 rounded-full bg-outline"></span>
-<span>Поддержка</span>
-<span class="w-2 h-2 rounded-full bg-outline"></span>
-<span>Похороны под ключ</span>
-<span class="w-2 h-2 rounded-full bg-outline"></span>
-<span>Все религии и традиции</span>
-<span class="w-2 h-2 rounded-full bg-outline"></span>
-<!-- Duplicate for seamless loop -->
-<span>Работаем 24/7</span>
-<span class="w-2 h-2 rounded-full bg-outline"></span>
-<span>Поддержка</span>
-<span class="w-2 h-2 rounded-full bg-outline"></span>
-<span>Похороны под ключ</span>
-<span class="w-2 h-2 rounded-full bg-outline"></span>
-<span>Все религии и традиции</span>
-<span class="w-2 h-2 rounded-full bg-outline"></span>
+<!-- About Section -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1">
+<div class="relative aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img alt="" class="w-full h-full object-cover grayscale opacity-80" data-alt="A professional person in formal dark attire offering a respectful gesture of support, warm dim lighting, soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnCduXdFOwTNZeFVepxwgS_OD4rhHUjZO3KCU40Igr2PxEtDHDy8yzPMP5jkNPB2RXM9_GYhD0QFEOOe5ivEaChHD5Pqd-tgwtikNCdlAHXk-2EHdXd2zLdYHgg5COlM9a_FVMSumXR65p5Ah1B9_3zBo7kFhpnPLaTP2Gt6w8PMH8h3KJmRyszhK2SjMKruWkwM-ANIR1Ox_t2a5ySwYkuIA-Mtw20iRyu-7lugQ8psd3iYpA3FBeuuG2cMJ-ru0hy5M89SDDp09-"/>
+<div class="absolute inset-0 ring-1 ring-inset ring-white/10"></div>
 </div>
 </div>
-<!-- About Us -->
-<section class="py-32 px-8 max-w-7xl mx-auto">
-<div class="grid md:grid-cols-2 gap-20 items-center">
-<div class="space-y-6">
-<h2 class="font-headline text-3xl font-bold text-primary">Unwavering Support</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed">
-                        In moments of profound loss, clarity can be difficult to find. We provide professional accompaniment that transcends mere service. Our mission is to be the steady hand that guides you through the complexities of final arrangements, respecting all cultural and religious traditions with unwavering silence.
+<div class="order-1 md:order-2 space-y-8">
+<h2 class="font-headline text-4xl font-bold tracking-tight">Our Mission</h2>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed">
+                        We work round the clock, handling all organizational issues and accompanying you at every stage of the journey. Our task is to ensure dignity and peace during these difficult times.
                     </p>
+<div class="grid grid-cols-2 gap-8 pt-8">
+<div>
+<div class="text-3xl font-headline font-bold text-primary mb-2">24/7</div>
+<div class="text-xs uppercase tracking-widest text-on-surface-variant font-label">Availability</div>
 </div>
-<div class="grid grid-cols-2 gap-4">
-<div class="aspect-square rounded-xl bg-surface-container overflow-hidden">
-<img alt="Professionalism" class="w-full h-full object-cover opacity-60 grayscale hover:opacity-100 transition-opacity duration-700" data-alt="Close up of professional black suit and white shirt cuff reflecting high-end formal ritual service standards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8gmKXppHMwSWwzNLUHVu3d4DnKzf7ZPS0r5JzEjDk2z-mCRqHL2ULISia00hBdoptPpA7pG53XFtaKj9jHCvmm-RHxl8VU6sM7LNEf7Kk29GPIr1EjUX_OY8GuwQV00i_OkV8NHaZrN389ULEW9WMqjQ3WpBdPpEhuFBi-QrXm7a9wmB6zJj4En_Drm7XMvJeuibBDwdoD44DqiVQrc-rxEfzULCi1mGSvm6JiUBID1WO6BaOSOHFJjr6aCtxq1H16McMOcWuwg8"/>
+<div>
+<div class="text-3xl font-headline font-bold text-primary mb-2">10+</div>
+<div class="text-xs uppercase tracking-widest text-on-surface-variant font-label">Years of Experience</div>
 </div>
-<div class="aspect-square rounded-xl bg-surface-container overflow-hidden translate-y-8">
-<img alt="Tradition" class="w-full h-full object-cover opacity-60 grayscale hover:opacity-100 transition-opacity duration-700" data-alt="Soft morning light shining through an old stone window onto a bouquet of white lilies for a ritual ceremony" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiZ48exanbGA07745P0GTzJWny5EG8l3kWHEaZhE2gM03IEkCU1Z2DRvojVuxqVguiKJn-liVD0HzJud3X6aA31iSENcaVXlnK8SXGytGdjxn_KQw-w9Aooo8cK4xMUT0cuON64NSCjLAXvVVmiv9xlGt_U7__Ewu8dniVt_R-rJ1fK5sZsLjL3NC_O3B9KGEEdEk8CMEZJkFyVRANd5mJdmTG660B-_DbcuWJ8iXsRMCOHPqLsrcb7Y4RfZJS0ahBz_OHhwlXLuE"/>
-</div>
-</div>
-</div>
-</section>
-<!-- Main Services (Bento Grid Style) -->
-<section class="py-20 px-8 bg-surface-container-low">
-<div class="max-w-7xl mx-auto space-y-12">
-<h2 class="font-headline text-4xl font-bold text-tertiary text-center">Funeral Services</h2>
-<div class="grid md:grid-cols-3 gap-6">
-<!-- Instruction Card -->
-<div class="md:col-span-2 bg-[#2a2a2a] p-10 rounded-xl border border-outline-variant/10 flex flex-col justify-between group">
-<div class="space-y-4">
-<span class="text-primary font-bold tracking-widest uppercase text-xs">Emergency Guide</span>
-<h3 class="text-3xl font-bold text-tertiary">Instructions: What to do in case of death</h3>
-<p class="text-on-surface-variant max-w-xl">Immediate steps and professional advice for the first hours of loss. We take over the bureaucratic burden.</p>
-</div>
-<div class="mt-8 flex gap-4">
-<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-bold hover:bg-white transition-all">Read Guide</button>
-<button class="text-primary border border-primary/20 px-8 py-3 rounded-lg font-bold hover:bg-surface-bright transition-all">Call Specialist</button>
-</div>
-</div>
-<!-- Standard Service -->
-<div class="bg-[#2a2a2a] p-10 rounded-xl border border-outline-variant/10 flex flex-col items-center text-center space-y-6">
-<span class="material-symbols-outlined text-5xl text-primary">temple_hindu</span>
-<h3 class="text-2xl font-bold text-tertiary">Traditional Burial</h3>
-<p class="text-on-surface-variant text-sm">Full management of traditional burial rituals across all denominations.</p>
-<button class="w-full bg-surface-container-high text-primary py-3 rounded-lg hover:bg-surface-bright transition-all">Select</button>
-</div>
-<!-- Services Row 2 -->
-<div class="bg-[#2a2a2a] p-10 rounded-xl border border-outline-variant/10 space-y-6">
-<span class="material-symbols-outlined text-4xl text-primary">local_fire_department</span>
-<h3 class="text-xl font-bold text-tertiary">Cremation Services</h3>
-<p class="text-on-surface-variant text-sm">Respectful cremation with private viewing and ash processing.</p>
-<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">Details <span class="material-symbols-outlined">arrow_forward</span></button>
-</div>
-<div class="bg-[#2a2a2a] p-10 rounded-xl border border-outline-variant/10 space-y-6">
-<span class="material-symbols-outlined text-4xl text-primary">public</span>
-<h3 class="text-xl font-bold text-tertiary">International Repatriation</h3>
-<p class="text-on-surface-variant text-sm">Expert handling of documentations and logistics for global transport.</p>
-<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">Details <span class="material-symbols-outlined">arrow_forward</span></button>
-</div>
-<div class="bg-[#2a2a2a] p-10 rounded-xl border border-outline-variant/10 space-y-6">
-<span class="material-symbols-outlined text-4xl text-primary">home_health</span>
-<h3 class="text-xl font-bold text-tertiary">Home Rituals</h3>
-<p class="text-on-surface-variant text-sm">Personalized arrangements at home to honor the departed in a familiar space.</p>
-<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">Details <span class="material-symbols-outlined">arrow_forward</span></button>
 </div>
 </div>
 </div>
 </section>
-<!-- Additional Services -->
-<section class="py-32 px-8 max-w-7xl mx-auto">
-<h2 class="font-headline text-3xl font-bold text-tertiary mb-16">Ritual Essentials</h2>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-<div class="group cursor-pointer">
-<div class="aspect-[3/4] rounded-xl overflow-hidden bg-surface-container mb-4">
-<img alt="Wreaths" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Elegant memorial wreath made of white roses and dark green leaves against a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD20qD8kWnjm3q8QzakI7f4KXy2SbGaxxSkdMEtfVXSsUPBXfWc7cVkO5Bv8l6hrcC0N8vN9MY26_olSaWmGvE7FxJKbj-l4vndsPJNvQVy8Quk1bw8mDAiefr4eDmRTZAiUUi9lcKJj6VpHE0yb3wWo2Gs6AarIyNBXb9rkiUj92j48OgepY3fRleC6szEexeYZmN--PfjuH2CSBcHLdcQ0gB80topkY4qzNs5yg5e8duWi4mtyj4q2vexYjLYQC0OdjBi785cMQ0"/>
+<!-- Services Cards Section -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center">
+<h2 class="font-headline text-4xl font-bold tracking-tight mb-4">Our Services</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Transparent and respectful funeral packages tailored to your traditions and needs.</p>
 </div>
-<h4 class="font-bold text-tertiary">Memorial Wreaths</h4>
-<p class="text-sm text-outline">Custom floral arrangements</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Basic Funeral -->
+<div class="bg-surface-container-high p-8 flex flex-col justify-between min-h-[400px] group hover:bg-surface-container-highest transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-primary text-3xl mb-6" data-icon="church">church</span>
+<h3 class="font-headline text-xl font-bold mb-4">Basic Funeral</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">Essential coordination and basic funeral arrangements with dignity.</p>
 </div>
-<div class="group cursor-pointer">
-<div class="aspect-[3/4] rounded-xl overflow-hidden bg-surface-container mb-4">
-<img alt="Crosses" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Handcrafted dark wood memorial cross with fine detailing in a somber studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo_RiZlpHY9NjCciKtPIbufCXT3kKZ5aktLYxIqt03KX9lDu_tSkjF3_JUufJUj8mAnI58UHO05_cTBhyJUvf62iUVoEmS-C5D4wKaXClEEDw8zbROGjEhadt7hp89oTQWjFiLvrhJNyomjIuguam-O5x0S0xzMhQR-S1KtbBgd6G7ZEi-RQ2aSb3bv7FJXvB_7nbTbTgi2FP9m5Sim6I46-K6RWMv6diP2YjUMAbSNX2UfysJbGfelWvh9vSu7723XRMhaULGVHY"/>
+<div class="space-y-3">
+<button class="w-full py-3 bg-primary text-on-primary font-bold uppercase text-[10px] tracking-widest active:scale-95 transition-all">Call</button>
+<button class="w-full py-3 border border-outline-variant/30 text-on-surface font-bold uppercase text-[10px] tracking-widest hover:bg-on-surface/5 transition-all">Consultation</button>
 </div>
-<h4 class="font-bold text-tertiary">Ritual Crosses</h4>
-<p class="text-sm text-outline">Handcrafted wooden tributes</p>
 </div>
-<div class="group cursor-pointer">
-<div class="aspect-[3/4] rounded-xl overflow-hidden bg-surface-container mb-4">
-<img alt="Monuments" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Polished black granite gravestone monument with reflection of the sky in a peaceful cemetery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMqZpHt7mS9CgiM_VjiQ2H2BbDDJU7xPc-2S8fyfdcNYlbCX3IKpU6Rh7Bh_DbvhNb_FaMxGxKP5ymxe0H0YiQGzvORYOVuIehLnJXgfEKS-wOekzW8sw3tlnboVRw0EdTp_EY2gsjcE2YfY0osVlxN4XbXdh9vN5tkb2xsPZaHnnLkhiU9BrAXHvJn5ZvN7Ze9sfqQz1EZfCy8tXa2V7--0E8YgMm9IMp1MrspmmRgOk6fN70Wh7-TM1YTGjJ6WSPSxEbotIdNaM"/>
+<!-- Premium Funeral -->
+<div class="bg-surface-container-high p-8 flex flex-col justify-between min-h-[400px] group hover:bg-surface-container-highest transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-primary text-3xl mb-6" data-icon="star">star</span>
+<h3 class="font-headline text-xl font-bold mb-4">Premium Funeral</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">Full-service coordination with premium transport and ceremonial honors.</p>
 </div>
-<h4 class="font-bold text-tertiary">Monuments</h4>
-<p class="text-sm text-outline">Granite and marble masonry</p>
+<div class="space-y-3">
+<button class="w-full py-3 bg-primary text-on-primary font-bold uppercase text-[10px] tracking-widest active:scale-95 transition-all">Call</button>
+<button class="w-full py-3 border border-outline-variant/30 text-on-surface font-bold uppercase text-[10px] tracking-widest hover:bg-on-surface/5 transition-all">Consultation</button>
 </div>
-<div class="group cursor-pointer">
-<div class="aspect-[3/4] rounded-xl overflow-hidden bg-surface-container mb-4">
-<img alt="Maintenance" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Well-maintained garden plot at a gravesite with fresh flowers and clean stones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-r4qusqX7XYbdaw31bhc-3rlNaO4RbjSUw3lysEQlK5jv_Yc4F1Ae34ZvvI8tRKnlja7RDlqkthyIDpMCBm1gHD2_J2_jyHIYOScdj4nGcMTA6s7DjmzN1buuCLwcce9PvbvHlYYxFWglqC5N8WOjPJ3Y5TQ19HX_5EZ2NKLhpiH_5E4mxhmFDrV2l_Oi2ReovMCBSHJWAXNw5UFWQWH7WExZ6jqtgn2U2dQ7AM_cgO1W2nOcpGGlSX7trpYAG6703hnAgysKego"/>
 </div>
-<h4 class="font-bold text-tertiary">Grave Maintenance</h4>
-<p class="text-sm text-outline">Year-round care services</p>
+<!-- Burial Services -->
+<div class="bg-surface-container-high p-8 flex flex-col justify-between min-h-[400px] group hover:bg-surface-container-highest transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-primary text-3xl mb-6" data-icon="nature">nature</span>
+<h3 class="font-headline text-xl font-bold mb-4">Burial Services</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">Professional plot coordination and site preparation for traditional burials.</p>
+</div>
+<div class="space-y-3">
+<button class="w-full py-3 bg-primary text-on-primary font-bold uppercase text-[10px] tracking-widest active:scale-95 transition-all">Call</button>
+<button class="w-full py-3 border border-outline-variant/30 text-on-surface font-bold uppercase text-[10px] tracking-widest hover:bg-on-surface/5 transition-all">Consultation</button>
+</div>
+</div>
+<!-- Cremation -->
+<div class="bg-surface-container-high p-8 flex flex-col justify-between min-h-[400px] group hover:bg-surface-container-highest transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-primary text-3xl mb-6" data-icon="local_fire_department">local_fire_department</span>
+<h3 class="font-headline text-xl font-bold mb-4">Cremation</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">Respectful cremation services with memorial urn options and coordination.</p>
+</div>
+<div class="space-y-3">
+<button class="w-full py-3 bg-primary text-on-primary font-bold uppercase text-[10px] tracking-widest active:scale-95 transition-all">Call</button>
+<button class="w-full py-3 border border-outline-variant/30 text-on-surface font-bold uppercase text-[10px] tracking-widest hover:bg-on-surface/5 transition-all">Consultation</button>
+</div>
+</div>
 </div>
 </div>
 </section>
 <!-- Why Choose Us -->
-<section class="py-24 bg-[#191a1a]">
-<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-12">
-<div class="space-y-4 text-center">
-<div class="w-16 h-16 bg-surface-bright rounded-full flex items-center justify-center mx-auto mb-6">
-<span class="material-symbols-outlined text-primary text-3xl">history_toggle_off</span>
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="space-y-4">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high">
+<span class="material-symbols-outlined text-primary" data-icon="support_agent">support_agent</span>
 </div>
-<h5 class="font-bold text-tertiary">24/7 Availability</h5>
-<p class="text-sm text-on-surface-variant">We respond instantly at any hour of the day or night.</p>
+<h4 class="font-headline font-bold text-lg">24/7 Support</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Always available to answer your questions and provide immediate assistance when needed.</p>
 </div>
-<div class="space-y-4 text-center">
-<div class="w-16 h-16 bg-surface-bright rounded-full flex items-center justify-center mx-auto mb-6">
-<span class="material-symbols-outlined text-primary text-3xl">bolt</span>
+<div class="space-y-4">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high">
+<span class="material-symbols-outlined text-primary" data-icon="bolt">bolt</span>
 </div>
-<h5 class="font-bold text-tertiary">Quick Arrival</h5>
-<p class="text-sm text-on-surface-variant">Our specialists arrive within 40 minutes of your call.</p>
+<h4 class="font-headline font-bold text-lg">Fast Response</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Rapid arrival and immediate processing of all necessary documentation.</p>
 </div>
-<div class="space-y-4 text-center">
-<div class="w-16 h-16 bg-surface-bright rounded-full flex items-center justify-center mx-auto mb-6">
-<span class="material-symbols-outlined text-primary text-3xl">key</span>
+<div class="space-y-4">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high">
+<span class="material-symbols-outlined text-primary" data-icon="inventory">inventory</span>
 </div>
-<h5 class="font-bold text-tertiary">Turn-Key Service</h5>
-<p class="text-sm text-on-surface-variant">Full logistical and bureaucratic management from A to Z.</p>
+<h4 class="font-headline font-bold text-lg">Full Service</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Comprehensive management from first call to final resting ceremony.</p>
 </div>
-<div class="space-y-4 text-center">
-<div class="w-16 h-16 bg-surface-bright rounded-full flex items-center justify-center mx-auto mb-6">
-<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+<div class="space-y-4">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high">
+<span class="material-symbols-outlined text-primary" data-icon="history_edu">history_edu</span>
 </div>
-<h5 class="font-bold text-tertiary">Total Respect</h5>
-<p class="text-sm text-on-surface-variant">Absolute adherence to all religious and cultural traditions.</p>
-</div>
-</div>
-</section>
-<!-- Pricing Section -->
-<section class="py-32 px-8 text-center max-w-4xl mx-auto">
-<h2 class="font-headline text-4xl font-bold text-tertiary mb-6">Pricing Policy</h2>
-<div class="p-12 bg-surface-container rounded-2xl border border-primary/10 relative overflow-hidden">
-<div class="absolute top-0 right-0 p-8 opacity-10">
-<span class="material-symbols-outlined text-9xl">payments</span>
-</div>
-<p class="text-2xl text-primary font-medium leading-relaxed italic">
-                    "Individual pricing, discussed personally with each client."
-                </p>
-<div class="mt-10 h-[1px] bg-outline-variant/30 w-1/4 mx-auto"></div>
-<p class="mt-10 text-on-surface-variant max-w-lg mx-auto">
-                    We believe every farewell is unique. Our specialists will help you find a dignified solution that fits your specific needs and budget.
-                </p>
-<button class="mt-10 bg-primary text-on-primary px-12 py-4 rounded-xl font-bold hover:bg-white transition-all">Request Quote</button>
-</div>
-</section>
-<!-- Reviews & Auth -->
-<section class="py-32 px-8 bg-surface-container-low">
-<div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-16">
-<!-- Auth Block -->
-<div class="md:col-span-4 space-y-8">
-<div class="bg-surface-container p-8 rounded-xl border border-outline-variant/10">
-<h3 class="text-xl font-bold text-tertiary mb-6">Leave a Review</h3>
-<form class="space-y-4">
-<div>
-<label class="text-xs uppercase tracking-widest text-outline mb-2 block">Name</label>
-<input class="w-full bg-surface-container-low border-none rounded-lg focus:ring-1 focus:ring-primary text-on-surface p-3" placeholder="Your name" type="text"/>
-</div>
-<div>
-<label class="text-xs uppercase tracking-widest text-outline mb-2 block">Password</label>
-<input class="w-full bg-surface-container-low border-none rounded-lg focus:ring-1 focus:ring-primary text-on-surface p-3" placeholder="••••••••" type="password"/>
-</div>
-<button class="w-full bg-surface-bright text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-all" type="button">Submit Feedback</button>
-</form>
-</div>
-<div class="p-6 bg-primary/5 rounded-xl border border-primary/10">
-<p class="text-xs text-primary/70 italic">To manage testimonials, please log in with admin credentials.</p>
-</div>
-</div>
-<!-- Reviews Feed -->
-<div class="md:col-span-8 space-y-8">
-<div class="flex justify-between items-center mb-8">
-<h2 class="text-3xl font-bold text-tertiary">Testimonials</h2>
-<span class="text-outline text-sm">34 Reviews</span>
-</div>
-<div class="space-y-6">
-<!-- Review Item -->
-<div class="bg-surface-container p-8 rounded-xl border-l-4 border-primary/20 relative group">
-<div class="flex justify-between items-start mb-4">
-<div>
-<h4 class="font-bold text-tertiary">Anna Mikhailova</h4>
-<p class="text-xs text-outline">Oct 12, 2023</p>
-</div>
-<div class="flex gap-1 text-primary text-sm">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-</div>
-<p class="text-on-surface-variant italic">"The team showed incredible sensitivity and professionalism. They handled all the paperwork so we could focus on saying goodbye. Truly grateful for their silent support."</p>
-<!-- Admin Delete Button (Simulated Hidden State) -->
-<button class="absolute -top-3 -right-3 bg-error text-on-error w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
-<span class="material-symbols-outlined text-sm">delete</span>
-</button>
-</div>
-<div class="bg-surface-container p-8 rounded-xl border-l-4 border-primary/20 relative group">
-<div class="flex justify-between items-start mb-4">
-<div>
-<h4 class="font-bold text-tertiary">Dmitry Ivanov</h4>
-<p class="text-xs text-outline">Sept 28, 2023</p>
-</div>
-<div class="flex gap-1 text-primary text-sm">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-</div>
-<p class="text-on-surface-variant italic">"Professional, fast, and respectful. They respected all religious traditions of our family without us even asking. Highly recommended."</p>
-<button class="absolute -top-3 -right-3 bg-error text-on-error w-8 h-8 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
-<span class="material-symbols-outlined text-sm">delete</span>
-</button>
-</div>
+<h4 class="font-headline font-bold text-lg">Respecting Traditions</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Deep understanding of religious and traditional requirements for all communities.</p>
 </div>
 </div>
 </div>
 </section>
-<!-- Contacts Section -->
-<section class="py-32 px-8 max-w-7xl mx-auto">
-<div class="grid md:grid-cols-2 gap-16">
-<div class="space-y-12">
-<h2 class="font-headline text-4xl font-bold text-tertiary">Connect With Us</h2>
-<div class="space-y-8">
-<div class="flex items-center gap-6">
-<div class="w-14 h-14 bg-surface-container rounded-xl flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">phone_in_talk</span>
+<!-- Contact Section -->
+<section class="py-32 px-8 bg-surface-container-low relative overflow-hidden">
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-headline text-4xl font-bold tracking-tight mb-12">Urgent Consultation</h2>
+<div class="space-y-6 mb-16">
+<a class="block text-4xl md:text-6xl font-headline font-extrabold text-on-surface hover:text-primary transition-colors" href="tel:+77077314191">+77077314191</a>
+<a class="block text-4xl md:text-6xl font-headline font-extrabold text-on-surface hover:text-primary transition-colors" href="tel:+77027314191">+77027314191</a>
 </div>
-<div>
-<p class="text-xs uppercase tracking-widest text-outline">Call Center 24/7</p>
-<div class="flex flex-col">
-<a class="text-xl font-bold text-tertiary hover:text-primary transition-colors" href="tel:+77077314191">+7 707 731 41 91</a>
-<a class="text-xl font-bold text-tertiary hover:text-primary transition-colors" href="tel:+77027314191">+7 702 731 41 91</a>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a class="flex items-center justify-center gap-3 bg-[#25D366] text-white px-10 py-5 font-bold uppercase tracking-widest text-sm hover:brightness-110 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="chat" data-weight="fill" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Здравствуйте, нужна консультация
+                    </a>
 </div>
 </div>
-</div>
-<div class="flex items-center gap-6">
-<div class="w-14 h-14 bg-surface-container rounded-xl flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">location_on</span>
-</div>
-<div>
-<p class="text-xs uppercase tracking-widest text-outline">Our HQ</p>
-<p class="text-xl font-bold text-tertiary">Main Ritual Center, Almaty</p>
-</div>
-</div>
-</div>
-<div class="flex gap-4">
-<a class="flex-1 bg-green-900/20 text-green-400 border border-green-400/20 py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-green-900/40 transition-all font-bold" href="https://wa.me/77077314191?text=Здравствуйте,%20нужна%20консультация">
-<span class="material-symbols-outlined">chat</span> WhatsApp Chat
-                        </a>
-<a class="flex-1 bg-primary text-on-primary py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-white transition-all font-bold" href="tel:+77077314191">
-<span class="material-symbols-outlined">call</span> Call Agent
-                        </a>
-</div>
-</div>
-<div class="rounded-2xl overflow-hidden min-h-[400px] grayscale opacity-70 contrast-125 border border-outline-variant/10 shadow-2xl">
-<img alt="Map" class="w-full h-full object-cover" data-alt="Monochromatic stylized map showing the city of Almaty with a minimalist dark aesthetic" data-location="Almaty" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4WDMxWULB3ticzGaZevm9fLl6h65ai_DP9g7ZeVRwVCChNBjScoBfdeP4d_yg8TrnPAc2TXxICDKlziml53cv469VT3mDMlQhs-Al7KnrHw_Jd00sUzZ6kgVfQFAD8Iom5Ss9PZeAs49rKV7CQ07t6x419v-7rIKnd5r95Fz3qvPBKuvIMsealPGFT-kdZBWVo2s_VrAWZNtrosMnRKhTZbHGPYyGqWRmfB_yfd5o3pQuW6F7BSlrwgGaaPceHT3tNzDxcnvUhqY"/>
-</div>
-</div>
+<!-- Decorative background element -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full border-t border-[#191a1a] mt-20 bg-[#0e0e0e] font-['Inter'] font-light tracking-wide text-xs">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto">
+<footer class="bg-[#131313] w-full py-20 px-8 border-t border-[#1f2020]">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-12">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
 <div class="space-y-6">
-<div class="font-['Manrope'] uppercase tracking-widest text-[#757575] font-bold text-base">Ritual Services</div>
-<p class="text-[#757575] leading-relaxed max-w-xs">Dedicated to providing quiet strength and professional dignity in moments of ultimate transition. The Silent Guardian for your family.</p>
+<div class="text-lg font-bold text-[#e7e5e5] font-headline">Eternal Memory</div>
+<p class="text-[#acabab] max-w-sm text-sm font-['Inter']">
+                        Professional funeral services with dignity and respect. 24/7 support for families in their most difficult times.
+                    </p>
 </div>
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-2 gap-16">
 <div class="space-y-4">
-<h6 class="text-[#f9f9f9] font-medium uppercase tracking-tighter">Quick Links</h6>
+<h5 class="text-on-surface text-xs font-bold uppercase tracking-widest">Navigation</h5>
 <ul class="space-y-2">
-<li><a class="text-[#757575] hover:text-[#c6c6c6] transition-colors duration-300" href="#">Privacy Policy</a></li>
-<li><a class="text-[#757575] hover:text-[#c6c6c6] transition-colors duration-300" href="#">Terms of Service</a></li>
-<li><a class="text-[#757575] hover:text-[#c6c6c6] transition-colors duration-300" href="#">Sitemap</a></li>
+<li><a class="text-[#acabab] hover:text-[#e7e5e5] text-sm transition-colors" href="#">Services</a></li>
+<li><a class="text-[#acabab] hover:text-[#e7e5e5] text-sm transition-colors" href="#">About</a></li>
+<li><a class="text-[#acabab] hover:text-[#e7e5e5] text-sm transition-colors" href="#">Reviews</a></li>
 </ul>
 </div>
 <div class="space-y-4">
-<h6 class="text-[#f9f9f9] font-medium uppercase tracking-tighter">Access</h6>
+<h5 class="text-on-surface text-xs font-bold uppercase tracking-widest">Legal</h5>
 <ul class="space-y-2">
-<li><a class="text-[#757575] hover:text-[#c6c6c6] transition-colors duration-300" href="#">Admin Portal</a></li>
-<li><a class="text-[#757575] hover:text-[#c6c6c6] transition-colors duration-300 underline" href="#">Agent Login</a></li>
+<li><a class="text-[#acabab] hover:text-[#e7e5e5] text-sm transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-[#acabab] hover:text-[#e7e5e5] text-sm transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-[#acabab] hover:text-[#e7e5e5] text-sm transition-colors" href="#">FAQ</a></li>
 </ul>
 </div>
 </div>
-<div class="space-y-6 flex flex-col md:items-end">
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-[#757575] hover:text-white cursor-pointer transition-colors">public</span>
-<span class="material-symbols-outlined text-[#757575] hover:text-white cursor-pointer transition-colors">description</span>
-<span class="material-symbols-outlined text-[#757575] hover:text-white cursor-pointer transition-colors">support</span>
 </div>
-<p class="text-[#757575] md:text-right">© 2024 Ritual Services. <br/>The Silent Guardian. All Rights Reserved.</p>
+<div class="pt-12 border-t border-outline-variant/10 text-center md:text-left">
+<p class="font-['Inter'] text-sm text-[#acabab]">
+                    © 2024 Eternal Memory. Работаем 24/7 • Поддержка • Похороны под ключ • Все религии и традиции
+                </p>
 </div>
 </div>
 </footer>
-<!-- Fixed Floating FAB for focused action -->
-<a class="fixed left-6 bottom-6 md:hidden w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-2xl z-50" href="tel:+77077314191">
-<span class="material-symbols-outlined text-3xl">call</span>
-</a>
+<!-- SideNavBar (Emergency Support) -->
+<div class="fixed right-6 bottom-6 flex flex-col gap-4 z-40">
+<div class="bg-[#1f2020]/90 backdrop-blur-xl p-4 flex flex-col gap-4 shadow-[0_40px_60px_-15px_rgba(0,0,0,0.3)] border border-outline-variant/10">
+<div class="flex items-center gap-3 pb-3 border-b border-outline-variant/20">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<div>
+<div class="text-on-surface text-xs font-bold font-['Manrope']">Emergency Assistance</div>
+<div class="text-[#acabab] text-[10px] uppercase tracking-tighter">Available 24/7</div>
+</div>
+</div>
+<button class="flex items-center gap-3 p-3 bg-primary text-[#0e0e0e] hover:bg-white transition-all duration-200">
+<span class="material-symbols-outlined text-lg" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="font-['Manrope'] font-medium text-sm">WhatsApp Chat</span>
+</button>
+<button class="flex items-center gap-3 p-3 text-[#e7e5e5] hover:bg-[#ffffff10] transition-all duration-200">
+<span class="material-symbols-outlined text-lg" data-icon="call" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-['Manrope'] font-medium text-sm">Call Support</span>
+</button>
+</div>
+</div>
 </body></html>
