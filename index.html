@@ -1,500 +1,627 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="ru"><head>
+<html class="light" lang="ru"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Ritual Almaty | Ритуальные услуги 24/7</title>
+<title>Ритуальные Услуги Алматы | Достойное прощание</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
             colors: {
-              "on-secondary": "#202020",
-              "on-primary": "#3f4041",
-              "secondary-fixed-dim": "#d6d4d3",
-              "surface-container-high": "#1f2020",
-              "surface": "#0e0e0e",
-              "primary": "#c6c6c6",
-              "surface-container-low": "#131313",
-              "on-secondary-fixed": "#3f3f3f",
-              "on-surface": "#e7e5e5",
-              "tertiary-container": "#d0ecff",
-              "on-primary-container": "#d0d0d0",
-              "on-tertiary": "#466170",
-              "inverse-surface": "#fcf9f8",
-              "secondary-container": "#3b3b3b",
-              "outline-variant": "#474848",
-              "outline": "#757575",
-              "inverse-primary": "#5e5f5f",
-              "surface-container-highest": "#252626",
-              "on-primary-fixed": "#3e3f40",
-              "secondary": "#9f9d9d",
-              "on-secondary-container": "#c1bfbe",
-              "on-error": "#490106",
-              "on-background": "#e7e5e5",
-              "primary-dim": "#b8b9b9",
-              "on-surface-variant": "#acabab",
-              "primary-container": "#464747",
-              "primary-fixed": "#e3e2e2",
-              "error-dim": "#bb5551",
-              "on-secondary-fixed-variant": "#5c5b5b",
-              "surface-dim": "#0e0e0e",
-              "tertiary-fixed": "#d0ecff",
-              "surface-bright": "#2b2c2c",
-              "on-tertiary-fixed-variant": "#486272",
-              "secondary-dim": "#9f9d9d",
-              "surface-tint": "#c6c6c6",
-              "inverse-on-surface": "#565555",
-              "surface-container-lowest": "#000000",
-              "surface-container": "#191a1a",
-              "on-tertiary-fixed": "#2c4655",
-              "primary-fixed-dim": "#d4d4d4",
-              "on-error-container": "#ff9993",
-              "tertiary-dim": "#c2def0",
-              "tertiary": "#eff8ff",
-              "on-primary-fixed-variant": "#5a5c5c",
-              "secondary-fixed": "#e4e2e1",
-              "tertiary-fixed-dim": "#c2def0",
-              "error": "#ee7d77",
-              "surface-variant": "#252626",
-              "background": "#0e0e0e",
-              "error-container": "#7f2927",
-              "on-tertiary-container": "#3e5868"
+              "primary": "#000000",
+              "on-primary": "#e5e2e1",
+              "background": "#ffffff",
+              "surface": "#f2f2f2",
+              "on-background": "#1a1a1a",
+              "accent": "#cccccc",
             },
             fontFamily: {
               "headline": ["Manrope"],
               "body": ["Inter"],
               "label": ["Inter"]
             },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
           },
         },
       }
     </script>
 <style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-      }
-      ::-webkit-scrollbar { width: 4px; }
-      ::-webkit-scrollbar-track { background: #0e0e0e; }
-      ::-webkit-scrollbar-thumb { background: #474848; }
-      .marquee {
-        display: flex;
-        overflow: hidden;
-        user-select: none;
-        gap: 2rem;
-      }
-      .marquee-content {
-        flex-shrink: 0;
-        display: flex;
-        justify-content: space-around;
-        min-width: 100%;
-        gap: 2rem;
-        animation: scroll 30s linear infinite;
-      }
-      @keyframes scroll {
-        from { transform: translateX(0); }
-        to { transform: translateX(-100%); }
-      }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .shimmer-btn::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 50%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: skewX(-25deg);
+            animation: shimmer 3s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 200%; }
+        }
+        .marquee-content {
+            display: flex;
+            animation: marquee 40s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            scroll-behavior: smooth; 
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+        body.dark {
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+        }
+        h1, h2, h3, .headline { font-family: 'Manrope', sans-serif; }
+        
+        /* Navigation Styles */
+        .nav-link {
+            border-bottom: 2px solid transparent;
+            color: #6b7280; /* text-gray-500 */
+        }
+        .dark .nav-link {
+            color: #9ca3af; /* text-gray-400 */
+        }
+        .nav-link.active {
+            color: #1a1a1a;
+            border-bottom-color: #1a1a1a;
+        }
+        .dark .nav-link.active {
+            color: #f5f5f5;
+            border-bottom-color: #f5f5f5;
+        }
+        
+        .modal-overlay {
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .bg-custom-surface { background-color: #f2f2f2; }
+        .dark .bg-custom-surface { background-color: #2a2a2a; }
+        
+        .bg-custom-bg { background-color: #ffffff; }
+        .dark .bg-custom-bg { background-color: #1a1a1a; }
+        
+        .border-custom-accent { border-color: #cccccc; }
+        
+        .text-custom-main { color: #1a1a1a; }
+        .dark .text-custom-main { color: #f5f5f5; }
     </style>
 </head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
-<!-- TopAppBar -->
-<header class="bg-[#0e0e0e]/80 backdrop-blur-md sticky full-width top-0 z-50">
-<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto font-['Manrope'] tracking-tight">
-<div class="text-xl font-bold text-[#e7e5e5] tracking-tighter">Ritual Almaty</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="text-[#c6c6c6] border-b border-[#c6c6c6] pb-1 transition-colors duration-300 ease-in-out" href="#about">About</a>
-<a class="text-[#acabab] hover:text-[#e7e5e5] transition-colors duration-300 ease-in-out" href="#services">Services</a>
-<a class="text-[#acabab] hover:text-[#e7e5e5] transition-colors duration-300 ease-in-out" href="#prices">Prices</a>
-<a class="text-[#acabab] hover:text-[#e7e5e5] transition-colors duration-300 ease-in-out" href="#reviews">Reviews</a>
-<a class="text-[#acabab] hover:text-[#e7e5e5] transition-colors duration-300 ease-in-out" href="#contacts">Contacts</a>
+<body class="bg-custom-bg text-custom-main transition-colors duration-500">
+<!-- TopNavBar -->
+<nav class="bg-white/80 dark:bg-black/80 backdrop-blur-xl font-['Manrope'] uppercase tracking-[0.1em] text-[12px] font-semibold docked full-width top-0 z-50 sticky border-b border-black/5 dark:border-white/5 shadow-[0_20px_40px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-full">
+<div class="text-xl font-bold tracking-tighter cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Ритуальные Услуги</div>
+<div class="hidden md:flex gap-8 items-center" id="nav-links">
+<a class="nav-link pb-1 transition-all duration-300" href="#services" onclick="setActive(this)">Услуги</a>
+<a class="nav-link pb-1 transition-all duration-300" href="#rituals" onclick="setActive(this)">Ритуалы</a>
+<a class="nav-link pb-1 transition-all duration-300" href="#monuments" onclick="setActive(this)">Памятники</a>
+<a class="nav-link pb-1 transition-all duration-300" href="#landscaping" onclick="setActive(this)">Благоустройство</a>
+<a class="nav-link pb-1 transition-all duration-300" href="#contacts" onclick="setActive(this)">Контакты</a>
 </div>
-<div class="flex items-center gap-4">
-<a class="flex items-center gap-2 text-[#c6c6c6] hover:text-[#e7e5e5] transition-colors" href="tel:+77077314191">
-<span class="material-symbols-outlined" data-icon="call">call</span>
-<span class="hidden lg:inline text-sm font-medium">+7 (707) 731-41-91</span>
-</a>
+<div class="flex items-center gap-6">
+<div class="flex flex-col items-end text-[10px] leading-tight opacity-70">
+<a href="tel:+77077314191">+77077314191</a>
+<a href="tel:+77027314191">+77027314191</a>
+</div>
+<button class="p-2 hover:bg-gray-100 dark:hover:bg-neutral-800 transition-all duration-300" onclick="toggleTheme()">
+<span class="material-symbols-outlined">contrast</span>
+</button>
+</div>
 </div>
 </nav>
-</header>
 <!-- Hero Section -->
-<section class="relative min-h-[921px] flex items-center overflow-hidden">
-<div class="absolute inset-0 z-0 opacity-40">
-<img class="w-full h-full object-cover grayscale" data-alt="dramatic moody architectural view of a minimalist memorial park with soft atmospheric mist and cold evening lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkp2tErhQncif25j7T6GewkNeEAZ55yzV21siK6M76v2x3WwqcB_n48re-gdM5UYBuxCtAODoWkRA1phmUUpbktNN19sKeohrzzNLazkJ6M5ify11ORp4iziPb1_NAcDfNHXC0hRiJ6ceve6RKTZ6x2MEEwy6KbxZdh-XNPEmnXpoEGrInX8Bh6clZE_Q1M46a8UGcUmtxZfAzQpblPdhyALLkBFH1KyTC63vrgQhOd9XyqAOPgHC9Iv0y1tC38XxJOty6DzB9KA"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<header class="relative min-h-[921px] flex items-center pt-24 pb-32 overflow-hidden bg-custom-surface">
+<div class="absolute inset-0 opacity-20 grayscale mix-blend-multiply dark:mix-blend-overlay">
+<img class="w-full h-full object-cover" data-alt="dramatic wide shot of misty mountain peaks in Kazakhstan at dawn, monochromatic and serene aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK6wyeHqw9WpTRN0ZHJlJa9HKCk-F8VGDdnccHNJcItKf7yM4d0EboVeXDZ294NT0LJdnEZrZqnOTYARz1trslqP7_KKYv-7ozCGJbGaGSLdwS4nfQbSfwixFHsc7GD--BKXoZTMYZ91BShJ--KLoDKgue3t9SRQW1VgyC82-xZddJZPBv_bq5-UtXD7FbcH7PEeQxDasAm-JUBI0ErcACE0GZqtkom3pC1YO8gig8iKGrjUlCV7eRS1Cd3Og5OovNbgl9KFGAnpil"/>
 </div>
-<div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-12 gap-12">
-<div class="lg:col-span-8">
-<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
-                    Поможем достойно проводить близкого человека в последний путь
-                </h1>
-<p class="font-headline text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-4">
-                    Ритуальные услуги в Алматы. Полное сопровождение в трудный момент
-                </p>
-<p class="text-primary font-medium mb-12 tracking-wide uppercase text-sm">
-                    Работаем круглосуточно. Агент приедет в течение 30–40 минут
-                </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<a class="px-8 py-5 bg-primary text-on-primary font-bold rounded-sm text-center hover:bg-primary-dim transition-all duration-300 shadow-xl" href="tel:+77077314191">
-                        Получить консультацию
-                    </a>
-<a class="px-8 py-5 border border-outline-variant/15 text-on-surface font-bold rounded-sm text-center hover:bg-surface-container transition-all duration-300" href="tel:+77077314191">
-                        Вызвать агента 24/7
-                    </a>
-</div>
-</div>
-</div>
-</section>
-<!-- Marquee -->
-<div class="bg-surface-container py-6 border-y border-outline-variant/5">
-<div class="marquee">
-<div class="marquee-content font-headline font-bold text-outline uppercase tracking-widest text-sm items-center">
-<span>Работаем 24/7</span>
-<span class="text-primary">•</span>
-<span>Поддержка</span>
-<span class="text-primary">•</span>
-<span>Похороны под ключ</span>
-<span class="text-primary">•</span>
-<span>Все религии и традиции</span>
-<span class="text-primary">•</span>
-<span>Работаем 24/7</span>
-<span class="text-primary">•</span>
-<span>Поддержка</span>
-<span class="text-primary">•</span>
-<span>Похороны под ключ</span>
-<span class="text-primary">•</span>
-<span>Все религии и традиции</span>
-</div>
-</div>
-</div>
-<!-- About Section - Tonal Layering -->
-<section class="py-24 bg-surface" id="about">
-<div class="container mx-auto px-6">
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-<div class="p-8 bg-surface-container hover:bg-surface-container-high transition-colors group">
-<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="schedule">schedule</span>
-<h3 class="font-headline font-bold text-xl mb-4">Работаем круглосуточно</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Круглосуточный выезд специалиста в любую точку города Алматы.</p>
-</div>
-<div class="p-8 bg-surface-container-low hover:bg-surface-container transition-colors group">
-<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="assignment_turned_in">assignment_turned_in</span>
-<h3 class="font-headline font-bold text-xl mb-4">Берём на себя все вопросы</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Полное оформление документов и решение организационных моментов.</p>
-</div>
-<div class="p-8 bg-surface-container hover:bg-surface-container-high transition-colors group">
-<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="handshake">handshake</span>
-<h3 class="font-headline font-bold text-xl mb-4">Сопровождаем на этапе</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Юридическая и моральная поддержка на каждом этапе прощания.</p>
-</div>
-<div class="p-8 bg-surface-container-low hover:bg-surface-container transition-colors group">
-<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="diversity_3">diversity_3</span>
-<h3 class="font-headline font-bold text-xl mb-4">Уважение к традициям</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Профессиональный подход с соблюдением всех религиозных обрядов.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section - Accordion Patterns -->
-<section class="py-24 bg-surface-container-low" id="services">
-<div class="container mx-auto px-6">
-<div class="max-w-4xl mx-auto">
-<h2 class="font-headline text-4xl font-bold mb-16 text-center">Ритуальные услуги по традициям</h2>
-<div class="space-y-4">
-<!-- Muslim Accordion -->
-<details class="group bg-surface-container-high overflow-hidden" open="">
-<summary class="flex justify-between items-center p-8 cursor-pointer list-none">
-<h3 class="font-headline text-2xl font-bold tracking-tight">Мусульманские похороны</h3>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform duration-300" data-icon="expand_more">expand_more</span>
-</summary>
-<div class="p-8 pt-0 bg-surface">
-<div class="grid md:grid-cols-2 gap-8">
-<div>
-<ul class="space-y-3 text-on-surface-variant">
-<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Омовение (гусуль)</li>
-<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Саван (кефен)</li>
-<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Джаназа намаз</li>
-<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Захоронение</li>
-</ul>
-</div>
-<div class="flex flex-col justify-between">
-<p class="text-sm text-on-surface-variant mb-6 italic">Первым делом позвоните нашему агенту для получения детальной инструкции по подготовке.</p>
-<a class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary text-on-primary font-bold rounded-sm hover:opacity-90 transition-opacity" href="tel:+77077314191">
-<span class="material-symbols-outlined" data-icon="call">call</span>
-                                        Позвонить
-                                    </a>
-</div>
-</div>
-</div>
-</details>
-<!-- Christian Accordion -->
-<details class="group bg-surface-container-high overflow-hidden">
-<summary class="flex justify-between items-center p-8 cursor-pointer list-none">
-<h3 class="font-headline text-2xl font-bold tracking-tight">Христианские похороны</h3>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform duration-300" data-icon="expand_more">expand_more</span>
-</summary>
-<div class="p-8 pt-0 bg-surface">
-<div class="grid md:grid-cols-2 gap-8">
-<div>
-<ul class="space-y-3 text-on-surface-variant">
-<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Отпевание</li>
-<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Подготовка тела</li>
-<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Церемония прощания</li>
-<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Инструкция при смерти</li>
-</ul>
-</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
 <div class="flex flex-col justify-center">
-<a class="inline-flex items-center justify-center gap-2 px-6 py-4 border border-primary text-primary font-bold rounded-sm hover:bg-primary hover:text-on-primary transition-all" href="tel:+77077314191">
-<span class="material-symbols-outlined" data-icon="call">call</span>
-                                        Позвонить
-                                    </a>
-</div>
-</div>
-</div>
-</details>
-<!-- Korean Accordion -->
-<details class="group bg-surface-container-high overflow-hidden">
-<summary class="flex justify-between items-center p-8 cursor-pointer list-none">
-<h3 class="font-headline text-2xl font-bold tracking-tight">Корейские традиции</h3>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform duration-300" data-icon="expand_more">expand_more</span>
-</summary>
-<div class="p-8 pt-0 bg-surface">
-<div class="grid md:grid-cols-2 gap-8">
-<div>
-<p class="text-on-surface-variant mb-4">Соблюдение всех национальных особенностей и обрядов прощания. Организация поминальных обедов.</p>
-</div>
-<div class="flex flex-col justify-center">
-<a class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary text-on-primary font-bold rounded-sm hover:opacity-90 transition-opacity" href="tel:+77077314191">
-<span class="material-symbols-outlined" data-icon="call">call</span>
-                                        Позвонить
-                                    </a>
-</div>
-</div>
-</div>
-</details>
-<!-- General -->
-<details class="group bg-surface-container-high overflow-hidden">
-<summary class="flex justify-between items-center p-8 cursor-pointer list-none">
-<h3 class="font-headline text-2xl font-bold tracking-tight">Общие услуги</h3>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform duration-300" data-icon="expand_more">expand_more</span>
-</summary>
-<div class="p-8 pt-0 bg-surface">
-<div class="grid md:grid-cols-3 gap-6">
-<div class="text-sm border-l-2 border-primary-container pl-4 py-2">Оформление документов</div>
-<div class="text-sm border-l-2 border-primary-container pl-4 py-2">Перевозка (катафалк)</div>
-<div class="text-sm border-l-2 border-primary-container pl-4 py-2">Организация поминальных обедов</div>
-</div>
-<div class="mt-8">
-<a class="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary text-on-primary font-bold rounded-sm hover:opacity-90" href="tel:+77077314191">
-                                    Консультация
-                                </a>
-</div>
-</div>
-</details>
-</div>
-</div>
-</div>
-</section>
-<!-- Additional Services Bento Grid -->
-<section class="py-24 bg-surface">
-<div class="container mx-auto px-6">
-<h2 class="font-headline text-3xl font-bold mb-12">Дополнительные услуги</h2>
-<div class="grid md:grid-cols-12 gap-6">
-<div class="md:col-span-8 group relative overflow-hidden bg-surface-container h-80">
-<img class="absolute inset-0 w-full h-full object-cover opacity-50 grayscale group-hover:scale-105 transition-transform duration-700" data-alt="high-quality funeral wreaths with dark green foliage and elegant white flowers in a studio setting with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaKvLjBpouxZ5Y2tIVQ1VPU-ALlGzgKyVqfaA1QvcJndmRC-LHdUBRHkj3kZh7_Pb_swrOigZiYHJQjiGHzq10If4O982TxnXa9WLfNfmmNDwjN-g02-SDvR_xCKlIVT2Bes6SAhsBkHkbC2F03ekmzrykjQY_WqYz6EMlal7qDilb6lEWNPwNquHt1CFMOr5v5wfUwjPgD-bHc7xkjah8NNiGfICz3tWg29kHOMk6RkSg2nWeFqvR9hAN40boGGa6ZexN9pUQ2A"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent p-8 flex flex-col justify-end">
-<h4 class="font-headline text-2xl font-bold mb-2">Венки и флористика</h4>
-<p class="text-on-surface-variant mb-4 max-w-md">Широкий выбор ритуальных венков и корзин из живых и искусственных цветов.</p>
-<a class="w-fit px-6 py-3 bg-primary text-on-primary text-sm font-bold uppercase tracking-wider" href="tel:+77077314191">Позвонить</a>
-</div>
-</div>
-<div class="md:col-span-4 bg-surface-container-high p-8 flex flex-col justify-between">
-<div>
-<h4 class="font-headline text-2xl font-bold mb-4">Кресты и Памятники</h4>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Изготовление и установка надгробий из гранита, мрамора и металла.</p>
-</div>
-<a class="inline-flex items-center justify-between border-b border-primary/30 py-4 hover:border-primary transition-colors text-primary font-bold" href="tel:+77077314191">
-<span>Заказать расчет</span>
-<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-<div class="md:col-span-4 bg-surface-container p-8">
-<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="landscape">landscape</span>
-<h4 class="font-headline text-xl font-bold mb-4">Благоустройство могил</h4>
-<p class="text-on-surface-variant text-sm mb-6">Уборка, озеленение, установка оград и плитки.</p>
-<a class="text-primary font-bold underline underline-offset-8" href="tel:+77077314191">Позвонить</a>
-</div>
-<div class="md:col-span-8 bg-surface-container-high p-8 flex items-center justify-center relative overflow-hidden">
-<div class="relative z-10 text-center">
-<h3 class="font-headline text-2xl font-bold mb-4" id="prices">Прозрачное ценообразование</h3>
-<p class="text-on-surface-variant max-w-xl mx-auto mb-8">Цена рассчитывается только после выбора всех услуг, необходимых именно вам. Без скрытых платежей.</p>
-<a class="px-12 py-5 bg-primary text-on-primary font-bold rounded-sm" href="tel:+77077314191">Узнать стоимость</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Why Choose Us -->
-<section class="py-24 bg-surface-container-low border-y border-outline-variant/10">
-<div class="container mx-auto px-6">
-<div class="grid md:grid-cols-4 gap-12 text-center">
-<div>
-<div class="text-5xl font-headline font-extrabold text-primary mb-2">24/7</div>
-<div class="text-on-surface-variant uppercase tracking-widest text-xs font-bold">Круглосуточно</div>
-</div>
-<div>
-<div class="text-5xl font-headline font-extrabold text-primary mb-2">30</div>
-<div class="text-on-surface-variant uppercase tracking-widest text-xs font-bold">Минут выезд</div>
-</div>
-<div>
-<div class="text-5xl font-headline font-extrabold text-primary mb-2">100%</div>
-<div class="text-on-surface-variant uppercase tracking-widest text-xs font-bold">Под ключ</div>
-</div>
-<div>
-<div class="text-5xl font-headline font-extrabold text-primary mb-2">15</div>
-<div class="text-on-surface-variant uppercase tracking-widest text-xs font-bold">Лет опыта</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Reviews Section -->
-<section class="py-24 bg-surface overflow-hidden" id="reviews">
-<div class="container mx-auto px-6">
-<div class="flex justify-between items-end mb-12">
-<div>
-<h2 class="font-headline text-4xl font-bold mb-2">Отзывы</h2>
-<p class="text-on-surface-variant">Более 25 семей доверили нам организацию прощания</p>
-</div>
-<button class="px-6 py-3 border border-outline-variant/20 hover:bg-surface-container transition-colors font-bold text-sm" onclick="document.getElementById('review-modal').classList.remove('hidden')">
-                    Оставить отзыв
-                </button>
-</div>
-<div class="grid md:grid-cols-3 gap-6">
-<!-- Sample Review -->
-<div class="p-8 bg-surface-container-low">
-<div class="flex gap-1 text-primary mb-4">
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="text-on-surface mb-6 leading-relaxed">"Выражаем огромную благодарность за организацию похорон нашего отца. Все было сделано очень достойно и без лишних слов. Агент приехал очень быстро."</p>
-<div class="font-bold">Иван Петров</div>
-</div>
-<div class="p-8 bg-surface-container-high">
-<div class="flex gap-1 text-primary mb-4">
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="text-on-surface mb-6 leading-relaxed">"Очень помогли с документами и омовением по мусульманским обычаям. Спокойно и профессионально."</p>
-<div class="font-bold">Айсулу Нурбекова</div>
-</div>
-<div class="p-8 bg-surface-container-low">
-<div class="flex gap-1 text-primary mb-4">
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star">star</span>
-</div>
-<p class="text-on-surface mb-6 leading-relaxed">"Профессиональный сервис в тяжелое время. Рекомендую, работают четко и прозрачно."</p>
-<div class="font-bold">Сергей Воронов</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Contacts Section -->
-<section class="py-24 bg-surface-container" id="contacts">
-<div class="container mx-auto px-6">
-<div class="grid md:grid-cols-2 gap-16 items-center">
-<div>
-<h2 class="font-headline text-5xl font-bold mb-8">Мы рядом 24/7</h2>
-<div class="space-y-8">
-<div>
-<p class="text-on-surface-variant uppercase tracking-widest text-xs font-bold mb-4">Телефоны экстренной связи</p>
-<div class="flex flex-col gap-4">
-<a class="text-3xl font-headline font-bold hover:text-primary transition-colors" href="tel:+77077314191">+7 (707) 731-41-91</a>
-<a class="text-3xl font-headline font-bold hover:text-primary transition-colors" href="tel:+77027314191">+7 (702) 731-41-91</a>
-</div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[0.9] mb-8">
+                Поможем достойно проводить близкого человека в последний путь
+            </h1>
+<p class="text-xl md:text-2xl font-light opacity-80 mb-6 max-w-xl">
+                Ритуальные услуги в Алматы. Полное сопровождение в трудный момент.
+            </p>
+<div class="flex items-center gap-4 mb-12">
+<div class="w-2 h-2 rounded-full bg-accent animate-pulse"></div>
+<p class="text-sm font-medium tracking-widest uppercase">Работаем круглосуточно. Агент приедет в течение 30–40 минут</p>
 </div>
 <div class="flex flex-wrap gap-4">
-<a class="flex items-center gap-3 px-8 py-5 bg-primary text-on-primary font-bold" href="tel:+77077314191">
-<span class="material-symbols-outlined" data-icon="call">call</span>
-                                Позвонить
-                            </a>
-<a class="flex items-center gap-3 px-8 py-5 border border-outline-variant/30 text-on-surface font-bold hover:bg-surface-container-high transition-all" href="https://wa.me/77077314191?text=Здравствуйте,%20нужна%20консультация">
-<span class="material-symbols-outlined" data-icon="chat">chat</span>
-                                WhatsApp
-                            </a>
+<a class="px-10 py-5 bg-primary dark:bg-white dark:text-black text-on-primary text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-opacity text-center" href="tel:+77077314191">
+                    Получить консультацию
+                </a>
+<a class="relative overflow-hidden px-10 py-5 bg-primary dark:bg-white dark:text-black text-on-primary text-sm font-bold uppercase tracking-widest shimmer-btn text-center" href="tel:+77077314191">
+                    Заказать услуги
+                </a>
+</div>
+</div>
+<div class="hidden lg:flex items-center justify-end">
+<div class="w-full aspect-[4/5] bg-neutral-200 dark:bg-neutral-800 relative">
+<img class="w-full h-full object-cover grayscale" data-alt="architectural close-up of light hitting a textured stone wall, creating dramatic shadows and highlighting natural patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsAuxTkhLfyCk_-c9ftrURiRARtXBIY_HK1rqEMCHbwYDY0Ch_YbvrNhHuS8QqUIxLUc18soj3G3N0YgX6JlkxXlBM9D4MKV3FT46WH6TegzPylLNbbtP2U-s4ghMOccVv7ZxzT95x7Nv43MAxkDl5jOKx4pqzTBi003gw3B69-AKPnw6iDvfQF8oYxYSUadfLhOm6YyuqOsQ0zNtg1hcSkzk_w6Ao5k8XPFV30H4L6ucZoQDUafzhrJ_kWzh4fP0A14QuJ7JUsS_v"/>
 </div>
 </div>
 </div>
-<div class="h-[400px] bg-surface grayscale relative">
-<!-- Placeholder for Map -->
-<div class="absolute inset-0 flex items-center justify-center border border-outline-variant/10">
-<div class="text-center">
-<span class="material-symbols-outlined text-6xl text-primary/20 mb-4" data-icon="map">map</span>
-<p class="text-on-surface-variant text-sm">Алматы, 24/7 по всему городу</p>
+</header>
+<!-- Marquee Section -->
+<div class="py-6 border-y border-black/10 dark:border-white/10 bg-custom-surface overflow-hidden whitespace-nowrap">
+<div class="marquee-content flex gap-12 text-sm font-bold uppercase tracking-[0.2em] opacity-50">
+<span>Работаем 24/7</span>
+<span>•</span>
+<span>Поддержка</span>
+<span>•</span>
+<span>Похороны под ключ</span>
+<span>•</span>
+<span>Все религии и традиции</span>
+<span>•</span>
+<span>Работаем 24/7</span>
+<span>•</span>
+<span>Поддержка</span>
+<span>•</span>
+<span>Похороны под ключ</span>
+<span>•</span>
+<span>Все религии и традиции</span>
 </div>
-<img class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" data-alt="stylized dark monochrome map of Almaty city showing central districts and major roads in high contrast" data-location="Almaty" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdb-oa-jtQnfEcYtRbIdPN5K2Sunv6nEyh0gFIV_Bt6N64V4jyDSP5yZNlx5wxM7anyuPT2ab8NM3dxYvYpOixghJjblFmX_uygTvUw8Kr5CYt7iV2NiVBHe_jpA4DWNCXsATCAb570NpQe0RIY7g0GGooi90ePTvmApeO_pKzaJSmQRNzxY7eIBR3TOi6Hw_UENb3uczHznqamD9FqUeU3NZNsZ3tF_ZEE5mxUT1Q2N69K1_Kpe_GBmUQJbDGBQ6Fex8cV4qS8w"/>
 </div>
+<!-- About Section -->
+<section class="py-32 bg-custom-bg" id="rituals">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+<div class="space-y-8">
+<div class="w-12 h-1 bg-primary dark:bg-white"></div>
+<h2 class="text-4xl font-bold tracking-tight">Профессионализм и уважение к традициям</h2>
+<p class="text-lg leading-relaxed opacity-70">
+                Мы понимаем глубину вашей утраты и берем на себя все организационные хлопоты. Наша задача — обеспечить спокойную и достойную церемонию прощания, соблюдая все религиозные каноны и семейные пожелания.
+            </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-sm font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-accent">verified</span> Собственные цеха производства
+                </li>
+<li class="flex items-center gap-4 text-sm font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-accent">verified</span> Опытные церемониймейстеры
+                </li>
+<li class="flex items-center gap-4 text-sm font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-accent">verified</span> Прозрачное ценообразование
+                </li>
+</ul>
+</div>
+<div class="relative bg-custom-surface p-12 shadow-2xl">
+<img class="w-full h-auto grayscale mb-8" data-alt="minimalist architectural photo of white columns with deep shadows under direct sunlight, representing order and stability" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_rZpTDcAoIxhax9o8VLXZhVVXQ2UyjoSqvfI6aIKapDOkD9OS6ViN0mxFRH58V205YsgWIImhKmHVhCsj1x4wIUASAYPrPffvRXHwK2SqOLpAqPGdwXk173K4l_JME-g2RW4G_5RN-vr3yu1puSN09TQKkmarNvxmQvAg5YN8Ow_HF51T9cnUnKSxkk5oGojrvvOjXp8nCNPGllobjfsxCoJj8Zzj4pqfxxf1KkxdEeKGgt_Z_1XtoX04lUJOtwvF57QjRhSXTGFU"/>
+<blockquote class="italic text-xl opacity-80 border-l-2 border-primary dark:border-white pl-6">
+                "Наша миссия — стать той невидимой опорой, в которой нуждается каждая семья в трудную минуту."
+            </blockquote>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-custom-surface" id="services">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-5xl font-bold mb-24 tracking-tighter">Направления Услуг</h2>
+<div class="space-y-1">
+<!-- Muslim -->
+<div class="group border-b border-black/10 dark:border-white/10">
+<button class="w-full py-12 flex justify-between items-center text-left hover:bg-black/5 dark:hover:bg-white/5 transition-colors px-6">
+<div class="flex items-baseline gap-8">
+<span class="text-sm font-mono opacity-30">01</span>
+<span class="text-3xl font-bold uppercase tracking-tight">Мусульманские обряды</span>
+</div>
+<span class="material-symbols-outlined text-4xl group-hover:rotate-45 transition-transform">add</span>
+</button>
+<div class="max-h-0 overflow-hidden group-focus-within:max-h-[1000px] transition-all duration-700">
+<div class="p-12 bg-custom-bg grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="font-bold text-accent">—</span>
+<p>Полная организация похорон по шариату (гусуль, саван, джаназа-намаз).</p>
+</div>
+<div class="flex gap-4">
+<span class="font-bold text-accent">—</span>
+<p>Предоставление катафалка и транспорта для провожающих.</p>
+</div>
+<div class="flex gap-4">
+<span class="font-bold text-accent">—</span>
+<p>Услуги муллы и подготовка места на кладбище.</p>
+</div>
+<a class="mt-8 px-8 py-4 bg-primary dark:bg-white dark:text-black text-on-primary text-xs font-bold uppercase tracking-widest inline-block text-center" href="tel:+77077314191">Консультация 24/7</a>
+</div>
+<img class="grayscale h-64 w-full object-cover" data-alt="interior of a modern minimalist mosque with soft ambient light filtering through high windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ3jbb82gYhD0wlE0yrFnb89GgCetU4XCenq19RqE-920qsKPZ62_mrOw4jt24FV_PA4pp2noyfiIRqmmwX0_ncUsjfLm8b-Ih3Jad0Cta5V7nMmtIDeaqIrwer5-DPD8HRJdyaB_ov4-YDaKuEiacE4YshPXeuvqCJgETiMqBS1VWeEZa3FV2Bi0l70-guKok4kbT2-wMUzq-bx_Sm3IgPpZXxmPOMlX1npk_PsJHd6eaxg32jIJzb9HHv4aeJM7rrYkUH5AN7Id8"/>
+</div>
+</div>
+</div>
+<!-- Christian -->
+<div class="group border-b border-black/10 dark:border-white/10">
+<button class="w-full py-12 flex justify-between items-center text-left hover:bg-black/5 dark:hover:bg-white/5 transition-colors px-6">
+<div class="flex items-baseline gap-8">
+<span class="text-sm font-mono opacity-30">02</span>
+<span class="text-3xl font-bold uppercase tracking-tight">Христианские традиции</span>
+</div>
+<span class="material-symbols-outlined text-4xl group-hover:rotate-45 transition-transform">add</span>
+</button>
+<div class="max-h-0 overflow-hidden group-focus-within:max-h-[1000px] transition-all duration-700">
+<div class="p-12 bg-custom-bg grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="font-bold text-accent">—</span>
+<p>Подготовка тела, облачение, церковное отпевание.</p>
+</div>
+<div class="flex gap-4">
+<span class="font-bold text-accent">—</span>
+<p>Широкий выбор гробов, крестов и церковной утвари.</p>
+</div>
+<div class="flex gap-4">
+<span class="font-bold text-accent">—</span>
+<p>Организация поминальных обедов.</p>
+</div>
+<a class="mt-8 px-8 py-4 bg-primary dark:bg-white dark:text-black text-on-primary text-xs font-bold uppercase tracking-widest inline-block text-center" href="tel:+77077314191">Связаться с агентом</a>
+</div>
+<img class="grayscale h-64 w-full object-cover" data-alt="sober interior of a small wooden chapel with light streaming through a single window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEqle4hG4ThawGqsxvivBavsxKFbqLvquejWYoiJ-CkVv4YaNQIu3QQtWdx5nUOoYRF7ddUujAYzVZjaCjbG2jPfrGn33fM7BGIMj30ZhI3ppOwya9gkIUhH5fjx2t8Q1YHwlQWB0nbOWxYFJs0Q4U01Q-12AXfl_vsERLyHP2O4rXNqo1reJFNxvC1m0nVqFE01vds78TS1ima1THAg386dvuwU4EAPos52a7WhA0N1CwoyNlSaMQ-hj6_znbq6m7XEukvMkSnoqs"/>
+</div>
+</div>
+</div>
+<!-- Korean -->
+<div class="group border-b border-black/10 dark:border-white/10">
+<button class="w-full py-12 flex justify-between items-center text-left hover:bg-black/5 dark:hover:bg-white/5 transition-colors px-6">
+<div class="flex items-baseline gap-8">
+<span class="text-sm font-mono opacity-30">03</span>
+<span class="text-3xl font-bold uppercase tracking-tight">Корейские традиции</span>
+</div>
+<span class="material-symbols-outlined text-4xl group-hover:rotate-45 transition-transform">add</span>
+</button>
+<div class="max-h-0 overflow-hidden group-focus-within:max-h-[1000px] transition-all duration-700">
+<div class="p-12 bg-custom-bg grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-6">
+<p>Соблюдение уникальных национальных обычаев, специальное оформление и церемониальные принадлежности.</p>
+<a class="mt-8 px-8 py-4 bg-primary dark:bg-white dark:text-black text-on-primary text-xs font-bold uppercase tracking-widest inline-block text-center" href="tel:+77077314191">Заказать звонок</a>
+</div>
+<img class="grayscale h-64 w-full object-cover" data-alt="zen garden with raked sand and single large stone, peaceful and contemplative atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmogj9Wri0dz9If5sL-H6NOC9owvJDZsbwz_DIeUJdDlN_kTJO0kJTadamnKpPnaRy_geWe-3i9PVvXXeoWeoUIw1fiu37poNn-DA9D715vpSCfs_n_ZX59ssQSEwR7LvSbxORovQsD8bjt36-O2Wz93l1V9985QYrMmX8z-eznVklMCc_YgRAG2UCyVUSm6x6sSrMxJs1_9WE4KUoSlee29RmltxzIiKaf51sXSunVC_yJ4m-1i4cGOjgkj28K-tsqIcRt9IE4moQ"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing -->
+<section class="py-32 bg-primary dark:bg-neutral-800 text-on-primary dark:text-white">
+<div class="max-w-7xl mx-auto px-8 text-center">
+<h2 class="text-4xl md:text-6xl font-bold tracking-tighter mb-8">Стоимость формируется индивидуально</h2>
+<p class="text-xl opacity-60 mb-12 max-w-2xl mx-auto">Мы предлагаем пакетные решения от эконом до премиум класса, учитывая возможности каждой семьи.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<div class="p-12 border border-white/10 hover:bg-white/5 transition-colors">
+<span class="text-xs uppercase tracking-[0.3em] opacity-50 block mb-4">Базовый</span>
+<div class="text-4xl font-bold mb-6">от 85 000 ₸</div>
+<ul class="text-sm opacity-60 space-y-2 mb-8 text-left list-disc list-inside">
+<li>Гроб стандарт</li>
+<li>Доставка до кладбища</li>
+<li>Оформление документов</li>
+</ul>
+</div>
+<div class="p-12 border border-white/10 bg-white/5 relative">
+<span class="absolute top-0 right-0 bg-white text-black text-[10px] font-bold px-4 py-1 uppercase tracking-widest">Популярный</span>
+<span class="text-xs uppercase tracking-[0.3em] opacity-50 block mb-4">Стандарт</span>
+<div class="text-4xl font-bold mb-6">от 150 000 ₸</div>
+<ul class="text-sm opacity-60 space-y-2 mb-8 text-left list-disc list-inside">
+<li>Улучшенный гроб</li>
+<li>Подготовка тела</li>
+<li>Сопровождение агентом</li>
+<li>Похоронный комплект</li>
+</ul>
+</div>
+<div class="p-12 border border-white/10 hover:bg-white/5 transition-colors">
+<span class="text-xs uppercase tracking-[0.3em] opacity-50 block mb-4">Индивидуальный</span>
+<div class="text-4xl font-bold mb-6">По запросу</div>
+<p class="text-sm opacity-60 mb-8">Эксклюзивные решения, VIP катафалки и полное управление церемонией.</p>
+</div>
+</div>
+<div class="flex justify-center">
+<a class="relative overflow-hidden px-16 py-6 bg-primary dark:bg-neutral-200 text-white dark:text-black text-sm font-bold uppercase tracking-[0.2em] shimmer-btn text-center inline-block" href="tel:+77077314191">
+                Проконсультироваться у агента
+            </a>
+</div>
+</div>
+</section>
+<!-- Bento Grid -->
+<section class="py-32 bg-custom-bg" id="monuments">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-4xl font-bold mb-16 tracking-tight">Дополнительно</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[800px]">
+<div class="md:col-span-2 md:row-span-2 bg-custom-surface group overflow-hidden relative min-h-[400px]">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="black granite polished monument reflecting clouds and soft sky light, minimalist and high-end texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR26zHmsmnJyRAwySjt_tusfWFzkpvX2XAtNPKcMSR9Utiz9O-YyEW6gUjMntLzrLRmf0Xm2Gv9U7qzdZ6mSeDqHbGUgksZS3nDUdkL2rdKPBCO0VsKb_d5QmnHjaF7EEcbPU09knP5ArwrVtNXSpKBLHAWKXoCosWiG7NuD5Qdh_TOgZmDAmMxwftJgrLIjMLZ4j_UHAPICQLcECe1wfToHUWQf_FeNOOFBGEXMdqE4_I6uLoIOk0IAKA1HIKybxSTPoaIR3C95Io"/>
+<div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black/80 to-transparent w-full">
+<h3 class="text-white text-2xl font-bold uppercase">Памятники из гранита</h3>
+<p class="text-white/60 text-sm mt-2">Собственное производство, гарантия 25 лет</p>
+</div>
+</div>
+<div class="md:col-span-2 bg-custom-surface group overflow-hidden relative min-h-[250px]" id="landscaping">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="macro shot of lush green grass and soil, representing growth and the cycle of nature" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBepc3kwYczzln7B9NJ0ZtYPt7ElQFW10BEKKPpTOpXn7MGP-aw0ht1ScGdhnrofV7wt7yvCWzU1qpvAOAXweApQxVFPhlbA4OUyDmNq0msNzFRhXZeVech8ruhj57qo_y9a4F_HR1AaAEHcbCVGBPaIBgxCtgy_GRNVdQLJupcQYc-LzUodYgu3-W3chBMowLf5ja-cwpQfXYY2YgL5xQSSPuLE3RJEtoJxRb7fk3W1LgBtuytFhNaCa0ierJOifrS-EmSmZw6gxxm"/>
+<div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
+<h3 class="text-white text-xl font-bold uppercase tracking-widest">Благоустройство могил</h3>
+</div>
+</div>
+<div class="bg-custom-surface flex flex-col justify-center p-8 text-center group transition-all duration-300 hover:bg-primary dark:hover:bg-white hover:text-white dark:hover:text-black cursor-pointer min-h-[150px]">
+<span class="material-symbols-outlined text-4xl mb-4">park</span>
+<h3 class="font-bold uppercase tracking-widest">Венки</h3>
+</div>
+<div class="bg-custom-surface flex flex-col justify-center p-8 text-center group transition-all duration-300 hover:bg-primary dark:hover:bg-white hover:text-white dark:hover:text-black cursor-pointer min-h-[150px]">
+<span class="material-symbols-outlined text-4xl mb-4">church</span>
+<h3 class="font-bold uppercase tracking-widest">Кресты</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews -->
+<section class="py-32 bg-custom-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+<div>
+<h2 class="text-4xl font-bold tracking-tight">Отзывы</h2>
+<p class="opacity-60 mt-2">Более 500 семей доверили нам организацию прощания</p>
+</div>
+<button class="px-8 py-4 border border-primary dark:border-white text-xs font-bold uppercase tracking-widest hover:bg-primary dark:hover:bg-white hover:text-white dark:hover:text-black transition-all duration-300" onclick="toggleModal(true)">Оставить отзыв</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-custom-bg p-8 shadow-sm">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic opacity-80 mb-6">"Выражаем огромную благодарность за чуткость и оперативность. Все прошло на высшем уровне, без лишней суеты."</p>
+<div class="font-bold text-xs uppercase tracking-widest">Айдар Кунанбаев</div>
+</div>
+<div class="bg-custom-bg p-8 shadow-sm">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic opacity-80 mb-6">"Помогли с документами и организацией в очень тяжелый момент. Рекомендую как профессионалов своего дела."</p>
+<div class="font-bold text-xs uppercase tracking-widest">Елена Сергеевна</div>
+</div>
+<div class="bg-custom-bg p-8 shadow-sm">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic opacity-80 mb-6">"Брат ушел неожиданно, агент приехал за 20 минут. Все объяснили, поддержали. Огромное спасибо за человечность."</p>
+<div class="font-bold text-xs uppercase tracking-widest">Бахытжан М.</div>
+</div>
+<div class="bg-custom-bg p-8 shadow-sm">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic opacity-80 mb-6">"Хочу выразить огромную благодарность вашей компании за поддержку в организации похорон нашей бабушки. Всё было организовано чётко, без лишних слов и нервотрёпки."</p>
+<div class="font-bold text-xs uppercase tracking-widest">Алина Петрова</div>
+</div>
+<div class="bg-custom-bg p-8 shadow-sm">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic opacity-80 mb-6">"От всей души благодарю за помощь в трудный момент. Ритуальный агент приехал моментально, помог со всеми справками. Истинные профессионалы."</p>
+<div class="font-bold text-xs uppercase tracking-widest">Ержан Мухамедов</div>
+</div>
+<div class="bg-custom-bg p-8 shadow-sm">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<p class="italic opacity-80 mb-6">"Очень профессиональная работа. Всё прошло достойно, без лишних хлопот для родственников. Спасибо вам за терпение и такт."</p>
+<div class="font-bold text-xs uppercase tracking-widest">Виктория Смирнова</div>
+</div>
+<div class="bg-custom-bg p-8 shadow-sm">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic opacity-80 mb-6">"Хочу отметить высокий уровень сервиса и внимательное отношение к деталям. Все пожелания семьи были учтены. Рекомендую вашу службу."</p>
+<div class="font-bold text-xs uppercase tracking-widest">Нурсултан Баймагамбетов</div>
+</div>
+<div class="bg-custom-bg p-8 shadow-sm">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<p class="italic opacity-80 mb-6">"Работа выполнена достойно, сотрудники вежливые и внимательные. Небольшие задержки с транспортом не испортили общего впечатления."</p>
+<div class="font-bold text-xs uppercase tracking-widest">Марина Иванова</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contacts -->
+<section class="py-32 bg-custom-bg" id="contacts">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-24">
+<div>
+<h2 class="text-5xl font-bold tracking-tighter mb-12">Контакты</h2>
+<div class="space-y-12">
+<div>
+<span class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40 block mb-2">Адрес офиса</span>
+<p class="text-2xl font-light">г. Алматы, пр. Аль-Фараби, 17</p>
+</div>
+<div>
+<span class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40 block mb-2">Круглосуточные телефоны</span>
+<a class="text-3xl font-bold block hover:opacity-70 transition-opacity" href="tel:+77077314191">+7 707 731 41 91</a>
+<a class="text-3xl font-bold block hover:opacity-70 transition-opacity" href="tel:+77027314191">+7 702 731 41 91</a>
+</div>
+<div class="flex gap-4">
+<a class="px-8 py-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-widest flex items-center gap-2 hover:opacity-90 transition-opacity" href="https://wa.me/77077314191">
+<span class="material-symbols-outlined">chat</span> WhatsApp Консультация
+                    </a>
+</div>
+</div>
+</div>
+<div class="h-[500px] bg-neutral-200 dark:bg-neutral-800 relative group cursor-pointer overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-50 transition-all duration-700 group-hover:opacity-80 group-hover:scale-105" data-alt="abstract monochromatic map of Almaty city streets, minimalist cartography style" data-location="Almaty" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDywMEJztogoWcZOTiwkKozu9jvBQHsvWic3m0u8A03RvJNAjhUiLCSPfJAGWfEhe8_sAX7gDv-u_nLdIlrF-mqpRZXNpkE6J3kpOi7CX3WCp3Le53_qIgZXNsk2NtnIZuodIzIqPbRnflC78v7spxWeFA6MdeS6J7_JUGy4LvMyQqrPRYqOfDf2j5-X9u_SVlI45C9waxOyDXjx_GderNRVoSpabNAcQGGFj1fqRmIpLOvnwMBn5Mwk3zd72bIXf2P8lxZxfF0B7_Q"/>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-12 h-12 bg-primary dark:bg-white rounded-full animate-ping absolute"></div>
+<div class="w-4 h-4 bg-primary dark:bg-white rounded-full relative"></div>
 </div>
 </div>
 </div>
 </section>
 <!-- Footer -->
-<footer class="bg-[#0e0e0e] full-width border-t border-[#474848]/15">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 py-12 max-w-7xl mx-auto font-['Inter'] text-sm">
-<div class="space-y-4">
-<div class="text-lg font-bold text-[#e7e5e5]">Ritual Almaty</div>
-<p class="text-[#acabab] max-w-xs leading-relaxed">
-                    Профессиональная организация похорон любой сложности. Мы берем на себя все заботы, чтобы вы могли попрощаться.
-                </p>
+<footer class="bg-neutral-100 dark:bg-neutral-900 font-['Inter'] text-sm tracking-normal full-width pt-24 pb-12 transition-colors duration-500 border-t border-black/5 dark:border-white/5">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<div class="font-['Manrope'] font-bold uppercase tracking-widest mb-6">Ритуальные Услуги</div>
+<p class="opacity-60 max-w-sm mb-8">Профессиональная организация похорон и мемориальных услуг в городе Алматы. Работаем со всеми вероисповеданиями.</p>
+<p class="opacity-60">© 2024 Ритуальные Услуги. Atmospheric Respect.</p>
 </div>
-<div class="space-y-4">
-<h4 class="text-[#e7e5e5] font-bold uppercase tracking-widest text-xs">Полезные ссылки</h4>
-<ul class="space-y-2">
-<li><a class="text-[#acabab] hover:text-[#primary] transition-all" href="https://wa.me/77077314191">WhatsApp Support</a></li>
-<li><a class="text-[#acabab] hover:text-[#primary] transition-all" href="#">Privacy Policy</a></li>
-<li><a class="text-[#acabab] hover:text-[#primary] transition-all" href="#">Terms of Service</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="text-[#e7e5e5] font-bold uppercase tracking-widest text-xs">Контакты</h4>
-<p class="text-[#acabab]">Алматы, Казахстан</p>
-<p class="text-[#e7e5e5] font-bold">© Ritual Services Almaty. 24/7 Professional Support.</p>
+<div class="flex flex-col md:items-end gap-4">
+<a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Политика конфиденциальности</a>
+<a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Условия использования</a>
+<a class="opacity-60 hover:opacity-100 transition-opacity" href="https://wa.me/77077314191">WhatsApp Консультация</a>
 </div>
 </div>
 </footer>
-<!-- FAB -->
-<a class="fixed bottom-8 right-8 w-16 h-16 bg-surface-bright rounded-full flex items-center justify-center text-primary shadow-[0px_24px_48px_rgba(0,0,0,0.5)] z-[60] hover:scale-110 transition-transform" href="tel:+77077314191">
-<span class="material-symbols-outlined text-3xl" data-icon="call" data-weight="fill">call</span>
+<!-- SideNavBar (Floating Actions) -->
+<div class="fixed right-6 bottom-6 flex flex-col items-center gap-4 z-50">
+<div class="flex flex-col items-center gap-4">
+<a class="w-14 h-14 bg-custom-surface shadow-2xl flex items-center justify-center hover:scale-110 transition-transform duration-300 border border-black/5 dark:border-white/5" href="tel:+77077314191">
+<span class="material-symbols-outlined">call</span>
 </a>
+<a class="w-14 h-14 bg-custom-surface shadow-2xl flex items-center justify-center hover:scale-110 transition-transform duration-300 border border-black/5 dark:border-white/5" href="https://wa.me/77077314191">
+<span class="material-symbols-outlined">chat</span>
+</a>
+</div>
+<a class="px-6 py-4 bg-primary text-white dark:bg-white dark:text-black font-['Manrope'] font-medium text-xs uppercase tracking-widest shadow-2xl active:scale-95 transition-all text-center" href="tel:+77077314191">
+        Заказать звонок
+    </a>
+</div>
 <!-- Review Modal -->
-<div class="fixed inset-0 bg-surface-dim/80 backdrop-blur-md hidden z-[100] flex items-center justify-center p-6" id="review-modal">
-<div class="bg-surface-container-highest max-w-lg w-full p-8 shadow-2xl relative">
-<button class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('review-modal').classList.add('hidden')">
-<span class="material-symbols-outlined" data-icon="close">close</span>
+<div class="modal-overlay fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" id="review-modal">
+<div class="bg-custom-bg max-w-lg w-full p-10 relative shadow-2xl transition-colors duration-500">
+<button class="absolute top-6 right-6 hover:opacity-50 transition-opacity" onclick="toggleModal(false)">
+<span class="material-symbols-outlined">close</span>
 </button>
-<h3 class="font-headline text-2xl font-bold mb-4">Оставить отзыв</h3>
-<p class="text-on-surface-variant mb-6 text-sm">Пожалуйста, свяжитесь с нами напрямую, чтобы ваш отзыв был подтвержден и опубликован.</p>
-<div class="space-y-4">
-<a class="flex items-center justify-center gap-3 w-full py-4 bg-primary text-on-primary font-bold" href="tel:+77077314191">
-                    Позвонить менеджеру
+<div class="space-y-8 text-center">
+<h3 class="text-2xl font-bold uppercase tracking-tight">Оставить отзыв</h3>
+<p class="text-lg opacity-80 leading-relaxed">
+                Хотите оставить отзыв? Напишите по номеру Whatsapp либо же позвоните по номеру и наша модерация обязательно вставит ваш отзыв в ряды сайта. С любовью и пониманием к каждому нашему клиенту.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<a class="px-8 py-4 bg-primary dark:bg-white dark:text-black text-on-primary dark:text-black text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:opacity-80 transition-opacity" href="tel:+77077314191">
+<span class="material-symbols-outlined text-sm">call</span> Позвонить
                 </a>
-<a class="flex items-center justify-center gap-3 w-full py-4 border border-outline-variant/30 text-on-surface font-bold" href="https://wa.me/77077314191">
-                    Написать в WhatsApp
+<a class="px-8 py-4 bg-[#25D366] text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:opacity-90 transition-opacity" href="https://wa.me/77077314191">
+<span class="material-symbols-outlined text-sm">chat</span> WhatsApp
                 </a>
 </div>
 </div>
 </div>
+</div>
+<script>
+    function toggleTheme() {
+        const body = document.body;
+        const html = document.documentElement;
+        if (body.classList.contains('dark')) {
+            body.classList.remove('dark');
+            html.classList.remove('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.classList.add('dark');
+            html.classList.add('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+
+    // Set theme on load
+    window.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+        } else if (savedTheme === 'light') {
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+        }
+        
+        // Initial nav state based on scroll
+        updateActiveNavOnScroll();
+    });
+
+    function setActive(el) {
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        el.classList.add('active');
+    }
+
+    function updateActiveNavOnScroll() {
+        const sections = ['services', 'rituals', 'monuments', 'landscaping', 'contacts'];
+        const scrollPosition = window.scrollY + 100;
+
+        sections.forEach(id => {
+            const section = document.getElementById(id);
+            if (section) {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveNavOnScroll);
+
+    function toggleModal(show) {
+        const modal = document.getElementById('review-modal');
+        if (show) {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        } else {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') toggleModal(false);
+    });
+</script>
 </body></html>
