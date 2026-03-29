@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reviews &amp; Community - Eternal Memory</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#d4d4d4",
+              "surface-container-low": "#131313",
+              "on-primary-fixed-variant": "#5a5c5c",
+              "tertiary-fixed-dim": "#e6e5e5",
+              "on-primary": "#3f4041",
+              "on-tertiary-container": "#565757",
+              "inverse-on-surface": "#565555",
+              "surface-variant": "#252626",
+              "secondary-container": "#3a3c3c",
+              "secondary-fixed": "#e3e2e2",
+              "on-surface-variant": "#acabab",
+              "surface-tint": "#c6c6c7",
+              "outline-variant": "#474848",
+              "on-primary-fixed": "#3e4040",
+              "on-secondary-container": "#bfbfbf",
+              "error-dim": "#bb5551",
+              "surface-bright": "#2b2c2c",
+              "outline": "#757575",
+              "secondary-dim": "#9d9e9e",
+              "on-secondary": "#1f2021",
+              "error-container": "#7f2927",
+              "surface-container": "#191a1a",
+              "on-error-container": "#ff9993",
+              "error": "#ee7d77",
+              "on-error": "#490106",
+              "on-secondary-fixed": "#3e3f40",
+              "surface-container-lowest": "#000000",
+              "tertiary": "#faf9f9",
+              "on-background": "#e7e5e5",
+              "secondary": "#9d9e9e",
+              "inverse-surface": "#fcf9f8",
+              "tertiary-container": "#ecebea",
+              "on-tertiary-fixed-variant": "#666666",
+              "primary": "#c6c6c7",
+              "surface": "#0e0e0e",
+              "surface-dim": "#0e0e0e",
+              "inverse-primary": "#5e5f5f",
+              "tertiary-fixed": "#f4f3f3",
+              "tertiary-dim": "#ecebea",
+              "primary-container": "#454747",
+              "surface-container-high": "#1f2020",
+              "on-tertiary-fixed": "#494a4a",
+              "on-surface": "#e7e5e5",
+              "on-primary-container": "#d0d0d0",
+              "primary-fixed-dim": "#d4d4d4",
+              "primary-fixed": "#e2e2e2",
+              "background": "#0e0e0e",
+              "primary-dim": "#b8b9b9",
+              "on-secondary-fixed-variant": "#5a5c5c",
+              "on-tertiary": "#5e5f5f",
+              "surface-container-highest": "#252626"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #e7e5e5;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 w-full flex justify-between items-center px-8 py-4 bg-[#0e0e0e]/60 backdrop-blur-md z-50">
+<div class="text-xl font-bold tracking-tighter text-[#e7e5e5] font-headline">Eternal Memory</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline tracking-[-0.02em] uppercase text-xs font-semibold text-[#acabab] hover:text-[#e7e5e5] transition-colors" href="#">Services</a>
+<a class="font-headline tracking-[-0.02em] uppercase text-xs font-semibold text-[#acabab] hover:text-[#e7e5e5] transition-colors" href="#">About</a>
+<a class="font-headline tracking-[-0.02em] uppercase text-xs font-semibold text-[#e7e5e5] border-b border-[#c6c6c7] pb-1 transition-all" href="#">Reviews</a>
+<a class="font-headline tracking-[-0.02em] uppercase text-xs font-semibold text-[#acabab] hover:text-[#e7e5e5] transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-headline tracking-[-0.02em] uppercase text-xs font-semibold text-[#c6c6c7]">+77077314191</span>
+<button class="bg-primary text-on-primary px-4 py-2 font-headline uppercase text-[10px] font-bold tracking-widest active:scale-95 transition-transform">Call Now</button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto min-h-screen">
+<!-- Header Section -->
+<header class="mb-20">
+<div class="label-md uppercase tracking-[0.1rem] text-on-surface-variant font-medium mb-4">Testimonials</div>
+<h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tight text-on-surface">Reviews &amp; Community</h1>
+<div class="mt-8 w-24 h-[1px] bg-primary-dim opacity-30"></div>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Side Panel: Auth & Admin -->
+<aside class="lg:col-span-4 space-y-12">
+<!-- Auth Section -->
+<section class="p-8 bg-surface-container-high border border-outline-variant/10">
+<h3 class="font-headline text-xl mb-6 font-semibold">Join the Circle</h3>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">Sign in to share your experience or manage your previous entries.</p>
+<form class="space-y-4">
+<div class="space-y-1">
+<label class="block text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Email Address</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary/50 text-on-surface py-3 px-4 text-sm transition-all placeholder:text-on-surface-variant/30" placeholder="email@example.com" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="block text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Password</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary/50 text-on-surface py-3 px-4 text-sm transition-all placeholder:text-on-surface-variant/30" placeholder="••••••••" type="password"/>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 font-headline uppercase text-xs font-bold tracking-[0.1em] hover:bg-white transition-colors mt-4" type="submit">Authorize</button>
+</form>
+<div class="mt-6 flex justify-between text-[10px] text-on-surface-variant uppercase tracking-widest font-semibold">
+<a class="hover:text-primary transition-colors" href="#">Forgot Password?</a>
+<a class="hover:text-primary transition-colors" href="#">Create Account</a>
+</div>
+</section>
+<!-- Admin Context Simulation (Visible for target users) -->
+<section class="p-8 bg-surface-container-low border border-primary/20">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="admin_panel_settings">admin_panel_settings</span>
+<h3 class="font-headline text-sm font-bold uppercase tracking-widest text-primary">Admin Dashboard</h3>
+</div>
+<div class="p-4 bg-surface-container-lowest/50">
+<p class="text-[11px] text-on-surface-variant font-mono">USER_ID: maksiminduchniy</p>
+<p class="text-[11px] text-on-surface-variant font-mono">STATUS: Super Admin</p>
+<div class="mt-4 flex items-center gap-2 text-xs text-on-surface">
+<div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                            Review moderation active
+                        </div>
+</div>
+</section>
+</aside>
+<!-- Main Content: Review Feed -->
+<section class="lg:col-span-8 space-y-12">
+<!-- Add Review Form (Simulation: visible when logged in) -->
+<div class="p-8 bg-surface-container-low">
+<h3 class="font-headline text-lg mb-4 font-semibold">Leave a Tribute</h3>
+<div class="space-y-4">
+<textarea class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary/50 text-on-surface p-4 text-sm transition-all placeholder:text-on-surface-variant/30 resize-none" placeholder="Share your words of remembrance or feedback..." rows="4"></textarea>
+<div class="flex justify-end">
+<button class="bg-surface-variant border border-outline-variant/30 text-on-surface px-8 py-3 font-headline uppercase text-[10px] font-bold tracking-widest hover:bg-surface-bright transition-all">Post Review</button>
+</div>
+</div>
+</div>
+<!-- Review Feed -->
+<div class="space-y-6 max-h-[800px] overflow-y-auto pr-4 hide-scrollbar">
+<!-- Review Card 1 (Admin View) -->
+<div class="bg-[#1f2020] p-8 group relative transition-all hover:bg-surface-container-highest">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-headline text-on-surface font-semibold">Alexander Volkov</h4>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">October 14, 2023</p>
+</div>
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-on-surface/90 text-sm leading-relaxed italic">
+                            "The dignity and silence provided by Eternal Memory during our family's darkest hour was beyond words. Their attention to cultural nuances was deeply appreciated."
+                        </p>
+<!-- Admin Action -->
+<button class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity bg-error-container/20 text-error-dim p-2 hover:bg-error-container hover:text-on-error">
+<span class="material-symbols-outlined text-sm" data-icon="delete">delete</span>
+</button>
+</div>
+<!-- Review Card 2 (Admin View) -->
+<div class="bg-[#1f2020] p-8 group relative transition-all hover:bg-surface-container-highest">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-headline text-on-surface font-semibold">Elena Markova</h4>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">September 28, 2023</p>
+</div>
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star">star</span>
+</div>
+</div>
+<p class="text-on-surface/90 text-sm leading-relaxed italic">
+                            "Professional, prompt, and empathetic. They handled the paperwork with Firebase-like efficiency, allowing us to focus on the memorial service without distraction."
+                        </p>
+<button class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity bg-error-container/20 text-error-dim p-2 hover:bg-error-container hover:text-on-error">
+<span class="material-symbols-outlined text-sm" data-icon="delete">delete</span>
+</button>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-[#1f2020] p-8 group relative transition-all hover:bg-surface-container-highest">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-headline text-on-surface font-semibold">Dmitry Sokolov</h4>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">August 05, 2023</p>
+</div>
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-on-surface/90 text-sm leading-relaxed italic">
+                            "The 24/7 support was a lifeline. Truly grateful for the compassionate staff who answered every late-night question with patience."
+                        </p>
+<button class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity bg-error-container/20 text-error-dim p-2 hover:bg-error-container hover:text-on-error">
+<span class="material-symbols-outlined text-sm" data-icon="delete">delete</span>
+</button>
+</div>
+<!-- Review Card 4 -->
+<div class="bg-[#1f2020] p-8 group relative transition-all hover:bg-surface-container-highest">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h4 class="font-headline text-on-surface font-semibold">Svetlana Ivanova</h4>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">July 19, 2023</p>
+</div>
+<div class="flex gap-1 text-primary">
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-on-surface/90 text-sm leading-relaxed italic">
+                            "Highly recommended. The funeral services under their care were handled with immense grace. The process was transparent and honest."
+                        </p>
+<button class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity bg-error-container/20 text-error-dim p-2 hover:bg-error-container hover:text-on-error">
+<span class="material-symbols-outlined text-sm" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Support Floating Menu -->
+<div class="fixed right-6 bottom-24 rounded-sm flex flex-col gap-4 z-40 bg-[#1f2020]/90 backdrop-blur-xl p-4 shadow-[0_40px_60px_-15px_rgba(0,0,0,0.3)]">
+<div class="mb-2">
+<h4 class="font-headline font-medium text-on-surface text-sm">Emergency Assistance</h4>
+<p class="text-[10px] text-on-surface-variant">Available 24/7</p>
+</div>
+<a class="flex items-center gap-3 p-3 bg-primary text-0e0e0e transition-transform hover:scale-105 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="text-xs font-headline font-medium uppercase tracking-tight">WhatsApp Chat</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-e7e5e5 hover:bg-white/10 transition-transform hover:scale-105 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+<span class="text-xs font-headline font-medium uppercase tracking-tight">Call Support</span>
+</a>
+</div>
+<!-- Footer -->
+<footer class="bg-[#131313] w-full border-t border-[#1f2020] py-12 px-8 mt-24">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div class="space-y-4">
+<div class="text-lg font-bold text-[#e7e5e5] font-headline">Eternal Memory</div>
+<p class="font-body text-sm text-[#acabab] max-w-md leading-relaxed">
+                    © 2024 Eternal Memory. Работаем 24/7 • Поддержка • Похороны под ключ • Все религии и традиции
+                </p>
+</div>
+<div class="flex flex-wrap gap-8 text-sm font-body">
+<a class="text-[#acabab] hover:text-[#e7e5e5] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#acabab] hover:text-[#e7e5e5] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#acabab] hover:text-[#e7e5e5] transition-colors" href="#">FAQ</a>
+</div>
+</div>
+</footer>
+<!-- Firebase Reference Hidden Metadata -->
+<div data-auth="firebase-auth-v9" data-collection="reviews" data-database="firestore" style="display: none;"></div>
+</body></html>
